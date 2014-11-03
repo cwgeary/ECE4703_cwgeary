@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;stereoloop&apos; to &apos;stereoloop_tutorial&apos;" description="Rename resource &apos;stereoloop&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/stereoloop" name="stereoloop_tutorial" stamp="1414613022877" updateReferences="true"/>
+</session>
