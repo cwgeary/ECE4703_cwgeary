@@ -1,9 +1,9 @@
 ******************************************************************************
                TMS320C6x Linker PC v7.4.2                      
 ******************************************************************************
->> Linked Mon Nov 10 19:32:16 2014
+>> Linked Wed Oct 29 15:45:39 2014
 
-OUTPUT FILE NAME:   <stereoloop_squareleft.out>
+OUTPUT FILE NAME:   <stereoloop.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00001a80
 
 
