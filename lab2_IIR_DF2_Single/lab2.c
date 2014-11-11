@@ -22,7 +22,6 @@ DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configurati
 
 //Create storage array for signal components
 float u[19] = {0};
-float x[19] = {0};
 int n = 0;
 
 interrupt void serialPortRcvISR(void);
@@ -64,41 +63,26 @@ interrupt void serialPortRcvISR()
 	// Note that right channel is in temp.channel[0]
 	// Note that left channel is in temp.channel[1]
 
-	//temp.channel[1] = temp.channel[0];
-
 	//create temporary variable of left channel for processing
 	float tempF = temp.channel[1];
 
 	//perform scaling => [-1, 1)
 	tempF /= 32768;
 
-	if(n < 19)
+	int i;
+	u[0] = tempF;
+
+	//REMINDER: IIR FILTERS DO NOT HAVE INPUT/OUTPUT BUFFERS, ONLY INTERMEDIATE VALUE BUFFER
+	//calculate intermediate values
+	for(i = 19; i > 1; i--)
 	{
-		x[n] = tempF;
-		n++;
+		u[i] += (DEN[i]*u[i-1]);
 	}
 
-	int i,j;
-
-	for(i = 17; i >= 0; i--){
-		x[i+1] = x[i];
-	}
-	x[0] = tempF;
-
+	//calculate output
 	for(i = 0; i < 19; i++)
 	{
-		for(j = 0; j < 3; j++)
-		{
-			u[i] += (DEN[i][j] * u[i-1]) + x[i];
-		}
-	}
-
-	for(i = 0; i < 19; i++)
-	{
-		for(j = 0; j < 3; j++)
-		{
-			out += NUM[i][j] * u[i];
-		}
+		out += NUM[i] * u[i];
 	}
 
 	//rescale and output
