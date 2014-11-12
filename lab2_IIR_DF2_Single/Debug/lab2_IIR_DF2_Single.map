@@ -1,7 +1,7 @@
 ******************************************************************************
                TMS320C6x Linker PC v7.4.2                      
 ******************************************************************************
->> Linked Wed Nov 12 14:50:18 2014
+>> Linked Wed Nov 12 18:27:51 2014
 
 OUTPUT FILE NAME:   <lab2_IIR_DF2_Single.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00001f80
@@ -12,7 +12,7 @@ MEMORY CONFIGURATION
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
   VECS                  00000000   00000200  00000200  00000000  RWIX
-  IRAM                  00000200   0002fe00  000028b6  0002d54a  RWIX
+  IRAM                  00000200   0002fe00  00002856  0002d5aa  RWIX
   L2RAM                 00030000   00010000  00000000  00010000  RWIX
   EMIFCE0               80000000   10000000  00000000  10000000  RWIX
   EMIFCE1               90000000   10000000  00000000  10000000  RWIX
@@ -81,22 +81,22 @@ vectors    0    00000000    00000200
                   00002788    00000028     dsk6713bsl.lib : dsk6713_aic23_setfreq.obj (.cinit)
                   000027b0    00000004     --HOLE-- [fill = 0]
 
-.far       0    000027b4    00000202     UNINITIALIZED
+.far       0    000027b4    000001e2     UNINITIALIZED
                   000027b4    000000f4     csl6713.lib : csl_irq.obj (.far)
-                  000028a8    00000078     lab2_IIR_Single.obj (.far)
-                  00002920    00000038     csl6713.lib : csl_mcbsp.obj (.far)
-                  00002958    00000028     dsk6713bsl.lib : dsk6713_aic23_registers.obj (.far)
-                  00002980    00000020                    : dsk6713_aic23_setfreq.obj (.far)
-                  000029a0    0000000c     rts6700.lib : exit.obj (.far)
-                  000029ac    00000008     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.far)
-                  000029b4    00000002                    : dsk6713.obj (.far)
+                  000028a8    00000058     lab2_IIR_Single.obj (.far)
+                  00002900    00000038     csl6713.lib : csl_mcbsp.obj (.far)
+                  00002938    00000028     dsk6713bsl.lib : dsk6713_aic23_registers.obj (.far)
+                  00002960    00000020                    : dsk6713_aic23_setfreq.obj (.far)
+                  00002980    0000000c     rts6700.lib : exit.obj (.far)
+                  0000298c    00000008     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.far)
+                  00002994    00000002                    : dsk6713.obj (.far)
 
-.const     0    000029b8    00000100     
-                  000029b8    0000004c     lab2_IIR_Single.obj (.const:_DEN)
-                  00002a04    0000004c     lab2_IIR_Single.obj (.const:_NUM)
-                  00002a50    00000040     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.const)
-                  00002a90    00000020                    : dsk6713.obj (.const)
-                  00002ab0    00000008     lab2_IIR_Single.obj (.const)
+.const     0    00002998    000000c0     
+                  00002998    00000040     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.const)
+                  000029d8    0000002c     lab2_IIR_Single.obj (.const:_DEN)
+                  00002a04    0000002c     lab2_IIR_Single.obj (.const:_NUM)
+                  00002a30    00000020     dsk6713bsl.lib : dsk6713.obj (.const)
+                  00002a50    00000008     lab2_IIR_Single.obj (.const)
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -108,10 +108,10 @@ address    name
 00000200   .data
 00000200   .text
 00002120   C$$EXIT
-000029b8   _DEN
-00002ab4   _DL
-000029ac   _DSK6713_AIC23_codeccontrolhandle
-000029b0   _DSK6713_AIC23_codecdatahandle
+000029d8   _DEN
+00002a54   _DL
+0000298c   _DSK6713_AIC23_codeccontrolhandle
+00002990   _DSK6713_AIC23_codecdatahandle
 000017a0   _DSK6713_AIC23_config
 00000ce0   _DSK6713_AIC23_openCodec
 00001778   _DSK6713_AIC23_rget
@@ -121,7 +121,7 @@ address    name
 0000024c   _DSK6713_init
 00000568   _DSK6713_rget
 0000057c   _DSK6713_rset
-000029b4   _DSK6713_version
+00002994   _DSK6713_version
 00000590   _DSK6713_wait
 000005e8   _DSK6713_waitusec
 00002000   _IRQ_enable
@@ -134,19 +134,19 @@ address    name
 000013e0   _MCBSP_reset
 00001920   _MCBSP_start
 00002100   _MCBSP_write
-00002ab0   _NL
+00002a50   _NL
 00002a04   _NUM
 000028a0   __IRQ_dispatchTable
 000027dc   __IRQ_eventTable
 00002140   __IRQ_hookFetchPacket
 00002860   __IRQ_intTable
-00002950   __MCBSP_hDev0
-00002954   __MCBSP_hDev1
+00002930   __MCBSP_hDev0
+00002934   __MCBSP_hDev1
 00002560   __STACK_END
 00000400   __STACK_SIZE
 00000001   __TI_args_main
 00001f00   ___TI_cpp_init
-000029a8   ___TI_enable_exit_profile_output
+00002988   ___TI_enable_exit_profile_output
 ffffffff   ___TI_pprof_out_hndl
 ffffffff   ___TI_prof_data_size
 ffffffff   ___TI_prof_data_start
@@ -162,9 +162,9 @@ ffffffff   ___pinit__
 00000200   ___text__
 00002040   __args_main
 00001a20   __auto_init
-000029a0   __cleanup_ptr
+00002980   __cleanup_ptr
 00000680   __divf
-000029a4   __dtors_ptr
+00002984   __dtors_ptr
 00002160   __stack
 00001b20   __strasg
 00002120   _abort
@@ -249,18 +249,18 @@ address    name
 000028a8   _hCodec
 000028ac   _config
 000028d4   _w
-00002950   __MCBSP_hDev0
-00002954   __MCBSP_hDev1
-000029a0   __cleanup_ptr
-000029a4   __dtors_ptr
-000029a8   ___TI_enable_exit_profile_output
-000029ac   _DSK6713_AIC23_codeccontrolhandle
-000029b0   _DSK6713_AIC23_codecdatahandle
-000029b4   _DSK6713_version
-000029b8   _DEN
+00002930   __MCBSP_hDev0
+00002934   __MCBSP_hDev1
+00002980   __cleanup_ptr
+00002984   __dtors_ptr
+00002988   ___TI_enable_exit_profile_output
+0000298c   _DSK6713_AIC23_codeccontrolhandle
+00002990   _DSK6713_AIC23_codecdatahandle
+00002994   _DSK6713_version
+000029d8   _DEN
 00002a04   _NUM
-00002ab0   _NL
-00002ab4   _DL
+00002a50   _NL
+00002a54   _DL
 ffffffff   ___TI_pprof_out_hndl
 ffffffff   ___TI_prof_data_size
 ffffffff   ___TI_prof_data_start

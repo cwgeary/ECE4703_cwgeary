@@ -21,7 +21,7 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float w[19] = {0};
+float w[11] = {0};
 
 interrupt void serialPortRcvISR(void);
 
@@ -76,19 +76,19 @@ interrupt void serialPortRcvISR()
 	//calculate output
 
 	//shift the intermediate value array forward by one sample
-	for(i = 17; i >= 0; i--){
+	for(i = 9; i >= 0; i--){
 		w[i+1] = w[i];
 	}
 
 	//iterate to sum the last 18 intermediate values*A_coefficients
-	for(k = 1; k<19; k++){
+	for(k = 1; k<11; k++){
 		sum += DEN[k]*w[k];
 	}
 	//subtract sum from the current scaled reading
 	w[0] = tempF - sum;
 
 	//iterate to sum the current and last 18 intermediate values*B_coefficients
-	for(k=0;k<19;k++){
+	for(k=0;k<11;k++){
 		out += NUM[k] * w[k];
 	}
 

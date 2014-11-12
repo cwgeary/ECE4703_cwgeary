@@ -21,9 +21,8 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float x[45] = {0};
+float x[29] = {0};
 short n = 0;
-short flag = 0;
 
 interrupt void serialPortRcvISR(void);
 
@@ -42,6 +41,12 @@ void main()
 
 	// set codec sampling frequency
 	DSK6713_AIC23_setFreq(hCodec, DSK6713_AIC23_FREQ_16KHZ);
+
+	for(n = 0; n < 29; n++)
+	{
+		x[n] = 0;
+	}
+
 
 	// interrupt setup
 	IRQ_globalDisable();			// Globally disables interrupts
@@ -73,31 +78,24 @@ interrupt void serialPortRcvISR()
 	tempF /= 32768;
 
 	//wait for buffer to fill up with samples before filtering
-	if((n<45) && (flag == 0)){
-		x[n] = tempF;
-		n++;
+	//buffer is full, now perform filter
+	int i,j;
+	if(n >= 29)
+	{
+		n = 0;
 	}
-	else{
-		//buffer is full, now perform filter
-		int i,j;
-		if(n >= 45)
-		{
-			flag = 1;
-			n = 0;
-		}
 
-		x[n] = tempF;
+	x[n] = tempF;
 
-		//Calculate filter gain
-		for(i = 0; i < 45; i++){
-			j = n - i;
-			if(j < 0){
-				j += 45;
-			}
-			out += B[i] * x[j];
+	//Calculate filter gain
+	for(i = 0; i < 29; i++){
+		j = n - i;
+		if(j < 0){
+			j += 29;
 		}
-		n++;
+		out += B[i] * x[j];
 	}
+	n++;
 
 	//rescale and output
 	out *= 32768;
