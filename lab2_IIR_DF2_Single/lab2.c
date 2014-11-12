@@ -74,15 +74,20 @@ interrupt void serialPortRcvISR()
 	//w[0] = tempF; //since first coefficient is 1
 
 	//calculate output
+
+	//shift the intermediate value array forward by one sample
 	for(i = 17; i >= 0; i--){
 		w[i+1] = w[i];
 	}
 
+	//iterate to sum the last 18 intermediate values*A_coefficients
 	for(k = 1; k<19; k++){
 		sum += DEN[k]*w[k];
 	}
+	//subtract sum from the current scaled reading
 	w[0] = tempF - sum;
 
+	//iterate to sum the current and last 18 intermediate values*B_coefficients
 	for(k=0;k<19;k++){
 		out += NUM[k] * w[k];
 	}

@@ -71,6 +71,7 @@ interrupt void serialPortRcvISR()
 
 	int i;
 	out = tempF;
+	//calculate the output of each second order section and pass it to the next
 	for(i = 0; i < 19; i++)
 	{
 		out = lordBiquad(out, i);
@@ -88,13 +89,17 @@ float lordBiquad(float x, int row)
 {
 	int i;
 	float y = 0;
+
+	//Shift the current section of the intermediate value array forward
 	for(i = 1; i >= 0; i--)
 	{
-		w[(i+1)+(row*3)] = w[i+(row*3)];
+		w[(i+1)+(row*3)] = w[i+(row*3)]; //reference only the current subsection of the intermediate value array
 	}
 
+	//compute the current intermediate value result for this section
 	w[(row*3)] = x - DEN[row][1]*w[1+(row*3)] - DEN[row][2]*w[2+(row*3)];
 
+	//compute the current output of this section of the filter
 	y = NUM[row][0]*w[0+(row*3)] + NUM[row][1]*w[1+(row*3)] + NUM[row][2]*w[2+(row*3)];
 
 	return y;
