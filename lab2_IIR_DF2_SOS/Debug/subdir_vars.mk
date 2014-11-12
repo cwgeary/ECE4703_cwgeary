@@ -10,30 +10,30 @@ ASM_SRCS += \
 ../vectors.asm 
 
 C_SRCS += \
-../lab2.c 
+../lab2_IIR_SOS.c 
 
 OBJS += \
-./lab2.obj \
+./lab2_IIR_SOS.obj \
 ./vectors.obj 
 
 ASM_DEPS += \
 ./vectors.pp 
 
 C_DEPS += \
-./lab2.pp 
+./lab2_IIR_SOS.pp 
 
 C_DEPS__QUOTED += \
-"lab2.pp" 
+"lab2_IIR_SOS.pp" 
 
 OBJS__QUOTED += \
-"lab2.obj" \
+"lab2_IIR_SOS.obj" \
 "vectors.obj" 
 
 ASM_DEPS__QUOTED += \
 "vectors.pp" 
 
 C_SRCS__QUOTED += \
-"../lab2.c" 
+"../lab2_IIR_SOS.c" 
 
 ASM_SRCS__QUOTED += \
 "../vectors.asm" 

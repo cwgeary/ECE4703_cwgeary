@@ -23,6 +23,7 @@ stereoloop.obj: C:/Program\ Files/Texas\ Instruments/C6xCSL/include/csl_mcbsp.h
 stereoloop.obj: C:/Program\ Files/Texas\ Instruments/C6xCSL/include/csl_mcbsphal.h
 stereoloop.obj: C:/Program\ Files/Texas\ Instruments/DSK6713/c6000/dsk6713/include/dsk6713.h
 stereoloop.obj: C:/Program\ Files/Texas\ Instruments/DSK6713/c6000/dsk6713/include/dsk6713_aic23.h
+stereoloop.obj: ../fdacoefs.h
 
 ../stereoloop.c: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdio.h: 
@@ -47,3 +48,4 @@ C:/Program\ Files/Texas\ Instruments/C6xCSL/include/csl_mcbsp.h:
 C:/Program\ Files/Texas\ Instruments/C6xCSL/include/csl_mcbsphal.h: 
 C:/Program\ Files/Texas\ Instruments/DSK6713/c6000/dsk6713/include/dsk6713.h: 
 C:/Program\ Files/Texas\ Instruments/DSK6713/c6000/dsk6713/include/dsk6713_aic23.h: 
+../fdacoefs.h: 

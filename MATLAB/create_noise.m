@@ -7,7 +7,7 @@ x = x*0.95; % reduce the amplitude of x to 95% of full scale
 
 recorder = audiorecorder(fs, 16, 2); % create a recorder object
 
-sound(x);record(recorder, 5);
+sound(x, fs);record(recorder, 5);
 
 %note, right channel is filtered
 pause(15);

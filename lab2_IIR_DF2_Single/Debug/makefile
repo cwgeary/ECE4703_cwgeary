@@ -9,7 +9,7 @@ CG_TOOL_ROOT := C:/ti/ccsv5/tools/compiler/c6000_7.4.2
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
 "./vectors.obj" \
-"./lab2.obj" \
+"./lab2_IIR_Single.obj" \
 -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" \
 -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" \
 -l"libc.a" \
@@ -125,8 +125,8 @@ lab2_IIR_DF2_Single.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(C6000_EXECUTABLE_OUTPUTS__QUOTED) "lab2_IIR_DF2_Single.out"
-	-$(RM) "lab2.pp" 
-	-$(RM) "lab2.obj" "vectors.obj" 
+	-$(RM) "lab2_IIR_Single.pp" 
+	-$(RM) "lab2_IIR_Single.obj" "vectors.obj" 
 	-$(RM) "vectors.pp" 
 	-@echo 'Finished clean'
 	-@echo ' '
