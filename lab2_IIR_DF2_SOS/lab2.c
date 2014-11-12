@@ -21,9 +21,10 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float w[19] = {0};
+float w[57] = {0};
 
 interrupt void serialPortRcvISR(void);
+float lordBiquad(float x, int row);
 
 void main()
 {
@@ -64,28 +65,17 @@ interrupt void serialPortRcvISR()
 
 	//create temporary variable of left channel for processing
 	float tempF = temp.channel[1];
-	float sum = 0;
 
 	//perform scaling => [-1, 1)
 	tempF /= 32768;
 
-	int k, i;
-	//calculate intermediate values
-	//w[0] = tempF; //since first coefficient is 1
-
-	//calculate output
-	for(i = 17; i >= 0; i--){
-		w[i+1] = w[i];
+	int i;
+	out = tempF;
+	for(i = 0; i < 19; i++)
+	{
+		out = lordBiquad(out, i);
 	}
 
-	for(k = 1; k<19; k++){
-		sum += DEN[k]*w[k];
-	}
-	w[0] = tempF - sum;
-
-	for(k=0;k<19;k++){
-		out += NUM[k] * w[k];
-	}
 
 	//rescale and output
 	out *= 32768;
@@ -94,3 +84,18 @@ interrupt void serialPortRcvISR()
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }
 
+float lordBiquad(float x, int row)
+{
+	int i;
+	float y = 0;
+	for(i = 1; i >= 0; i--)
+	{
+		w[(i+1)+(row*3)] = w[i+(row*3)];
+	}
+
+	w[(row*3)] = x - DEN[row][1]*w[1+(row*3)] - DEN[row][2]*w[2+(row*3)];
+
+	y = NUM[row][0]*w[0+(row*3)] + NUM[row][1]*w[1+(row*3)] + NUM[row][2]*w[2+(row*3)];
+
+	return y;
+}
