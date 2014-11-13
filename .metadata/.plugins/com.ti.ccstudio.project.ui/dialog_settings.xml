@@ -2,15 +2,20 @@
 <section name="Workbench">
 	<section name="com.ti.ccstudio.project.ui.internal.properties.DynamicPropertiesPageManager">
 	</section>
+	<section name="CCS.ImportCCSProjectWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_IMPORT_REFERENCED_PROJECTS_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.wizards.project.ProjectSettingsPage">
 		<item value="C6000" key="CCS.DEVICE_FAMILY"/>
-		<item value="CCS.TEMPLATES" key="CCS.EXPANDED_AREA"/>
-		<item value="" key="CCS.CODEGEN_TOOL_VERSION"/>
-		<item value="" key="CCS.DEVICE_ENDIANNESS"/>
 		<item value="TMS320C67XX.DSK6713" key="CCS.DEVICE"/>
+		<item value="" key="CCS.DEVICE_ENDIANNESS"/>
+		<item value="" key="CCS.CODEGEN_TOOL_VERSION"/>
+		<item value="CCS.TEMPLATES" key="CCS.EXPANDED_AREA"/>
 		<item value="M:\ECE4703\C6713.cmd" key="CCS.LINKER_COMMAND_FILE"/>
-		<item value="null" key="CCS.RUNTIME_SUPPORT_LIB"/>
 		<item value="executable" key="CCS.OUTPUT_TYPE"/>
+		<item value="null" key="CCS.RUNTIME_SUPPORT_LIB"/>
 		<item value="" key="CCS.OUTPUT_FORMAT"/>
 		<item value="C:\ti\ccsv5\ccs_base\common\targetdb\connections\SDDSKUSB_Connection.xml" key="CCS.CONNECTION"/>
 	</section>

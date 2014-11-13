@@ -21,7 +21,8 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float w[57] = {0};
+float w[33] = {0};
+short n = 0;
 
 interrupt void serialPortRcvISR(void);
 float lordBiquad(float x, int row);
@@ -71,11 +72,15 @@ interrupt void serialPortRcvISR()
 
 	int i;
 	out = tempF;
+	if(n >= 3){
+		n = 0;
+	}
 	//calculate the output of each second order section and pass it to the next
-	for(i = 0; i < 19; i++)
+	for(i = 0; i < 11; i++)
 	{
 		out = lordBiquad(out, i);
 	}
+	n++;
 
 
 	//rescale and output
@@ -87,20 +92,34 @@ interrupt void serialPortRcvISR()
 
 float lordBiquad(float x, int row)
 {
-	int i;
+	//reference markers for manipulating the cyclical array
+	int n1,n2,n3;
 	float y = 0;
 
-	//Shift the current section of the intermediate value array forward
-	for(i = 1; i >= 0; i--)
-	{
-		w[(i+1)+(row*3)] = w[i+(row*3)]; //reference only the current subsection of the intermediate value array
+	//adding n1 to the w index will shift 1 index back
+	//adding n2 to the w index will shift 2 indicies back
+	//adding n3 to the w index will shift 3 indices back, meaning the current index
+	if(n == 0){
+		n1 = 2;
+		n2 = 1;
+		n3 = 0;
+	}
+	else if(n == 1){
+		n1 = 0;
+		n2 = 2;
+		n3 = 1;
+	}
+	else{
+		n1 = 1;
+		n2 = 0;
+		n3 = 2;
 	}
 
 	//compute the current intermediate value result for this section
-	w[(row*3)] = x - DEN[row][1]*w[1+(row*3)] - DEN[row][2]*w[2+(row*3)];
+	w[(row*3)+n] = x - DEN[row][1]*w[(row*3)+n1] - DEN[row][2]*w[(row*3)+n2];
 
 	//compute the current output of this section of the filter
-	y = NUM[row][0]*w[0+(row*3)] + NUM[row][1]*w[1+(row*3)] + NUM[row][2]*w[2+(row*3)];
+	y = NUM[row][0]*w[(row*3)+n3] + NUM[row][1]*w[(row*3)+n1] + NUM[row][2]*w[(row*3)+n2];
 
 	return y;
 }

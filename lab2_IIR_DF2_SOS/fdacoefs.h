@@ -14,7 +14,7 @@
  */
 
 /* General type conversion for MATLAB generated C-code  */
-#include "tmwtypes.h"
+//#include "tmwtypes.h"
 /* 
  * Expected path to tmwtypes.h 
  * C:\Program Files\MATLAB\R2013a\extern\include\tmwtypes.h 
@@ -27,7 +27,7 @@
  */
 #define MWSPT_NSEC 11
 const int NL[MWSPT_NSEC] = { 1,3,1,3,1,3,1,3,1,3,1 };
-const real32_T NUM[MWSPT_NSEC][3] = {
+const float NUM[MWSPT_NSEC][3] = {
   {
   0.0005674039712,              0,              0 
   },
@@ -63,7 +63,7 @@ const real32_T NUM[MWSPT_NSEC][3] = {
   }
 };
 const int DL[MWSPT_NSEC] = { 1,3,1,3,1,3,1,3,1,3,1 };
-const real32_T DEN[MWSPT_NSEC][3] = {
+const float DEN[MWSPT_NSEC][3] = {
   {
                 1,              0,              0 
   },

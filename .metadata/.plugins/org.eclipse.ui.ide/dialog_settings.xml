@@ -79,4 +79,6 @@
 		<item value="org.eclipse.tm.terminal:3.2.1.201209191030-41031231A2A2141"/>
 		<item value="org.eclipse.wst.jsdt.feature:1.4.1.v201208171701-7H7DFg0FC7sReqSyfqesWi"/>
 	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
 </section>

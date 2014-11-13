@@ -1,277 +1,159 @@
 
-**** Build of configuration Debug for project helloworld ****
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../hello.c'
+'Building file: ../lab2_IIR_SOS.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="hello.pp"  "../hello.c"
-'Finished building: ../hello.c'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
+'Finished building: ../lab2_IIR_SOS.c'
 ' '
-'Building target: helloworld.out'
+'Building target: lab2_IIR_DF2_SOS.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"helloworld.map" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="helloworld_linkInfo.xml" --rom_model -o "helloworld.out"  "./hello.obj" -l"libc.a" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out"  "./vectors.obj" "./lab2_IIR_SOS.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
-warning #10210-D: creating ".stack" section with default size of 0x400; use the -stack option to change the default size
-warning #10210-D: creating ".sysmem" section with default size of 0x400; use the -heap option to change the default size
-'Finished building target: helloworld.out'
+'Finished building target: lab2_IIR_DF2_SOS.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project helloworld ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building target: helloworld.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x400 -m"helloworld.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="helloworld_linkInfo.xml" --rom_model -o "helloworld.out"  "./hello.obj" -l"libc.a" 
-<Linking>
-'Finished building target: helloworld.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project helloworld ****
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project helloworld ****
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project helloworld ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
+'Building file: ../lab2_IIR_SOS.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
+"../lab2_IIR_SOS.c", line 74: error #20: identifier "n" is undefined
+"../lab2_IIR_SOS.c", line 97: error #20: identifier "n" is undefined
+2 errors detected in the compilation of "../lab2_IIR_SOS.c".
+
+>> Compilation failure
+gmake: *** [lab2_IIR_SOS.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_FIR_DF1 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab2_IIR_SOS.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
+'Finished building: ../lab2_IIR_SOS.c'
+' '
+'Building target: lab2_IIR_DF2_SOS.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out"  "./vectors.obj" "./lab2_IIR_SOS.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab2_IIR_DF2_SOS.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_Single ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project simulator ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_FIR_DF1 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab2_IIR_SOS.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
+'Finished building: ../lab2_IIR_SOS.c'
 ' '
 'Building file: ../vectors.asm'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
 'Finished building: ../vectors.asm'
 ' '
-'Building target: stereoloop.out'
+'Building target: lab2_IIR_DF2_SOS.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_linkInfo.xml" --rom_model -o "stereoloop.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out"  "./vectors.obj" "./lab2_IIR_SOS.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
-'Finished building target: stereoloop.out'
+'Finished building target: lab2_IIR_DF2_SOS.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project stereoloop ****
+**** Build of configuration Debug for project lab2_IIR_DF2_Single ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project stereoloop ****
+**** Build of configuration Debug for project simulator ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project helloworld ****
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Clean-only build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k clean 
-DEL /F  "stereoloop_squareleft.out"
-Could Not Find M:\ECE4703\stereoloop_squareleft\Debug\stereoloop_squareleft.out
-DEL /F "stereoloop.pp" 
-DEL /F "stereoloop.obj" "vectors.obj" 
-DEL /F "vectors.pp" 
-Could Not Find M:\ECE4703\stereoloop_squareleft\Debug\vectors.pp
-'Finished clean'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
+**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
+'Building file: ../lab2_IIR_SOS.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
+'Finished building: ../lab2_IIR_SOS.c'
 ' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: stereoloop_squareleft.out'
+'Building target: lab2_IIR_DF2_SOS.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_squareleft.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_squareleft_linkInfo.xml" --rom_model -o "stereoloop_squareleft.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out"  "./vectors.obj" "./lab2_IIR_SOS.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
-'Finished building target: stereoloop_squareleft.out'
-' '
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project stereoloop_tutorial ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k clean 
-DEL /F  "stereoloop_tutorial.out"
-Could Not Find M:\ECE4703\stereoloop_tutorial\Debug\stereoloop_tutorial.out
-DEL /F "stereoloop.pp" 
-DEL /F "stereoloop.obj" "vectors.obj" 
-DEL /F "vectors.pp" 
-Could Not Find M:\ECE4703\stereoloop_tutorial\Debug\vectors.pp
-'Finished clean'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_tutorial ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: stereoloop_tutorial.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_tutorial.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_tutorial_linkInfo.xml" --rom_model -o "stereoloop_tutorial.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: stereoloop_tutorial.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
-' '
-'Building target: stereoloop_squareleft.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_squareleft.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_squareleft_linkInfo.xml" --rom_model -o "stereoloop_squareleft.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: stereoloop_squareleft.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project helloworld ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_tutorial ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
-' '
-'Building target: stereoloop_squareleft.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_squareleft.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_squareleft_linkInfo.xml" --rom_model -o "stereoloop_squareleft.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: stereoloop_squareleft.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
-' '
-'Building target: stereoloop_squareleft.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_squareleft.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_squareleft_linkInfo.xml" --rom_model -o "stereoloop_squareleft.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: stereoloop_squareleft.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project stereoloop_squareleft ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../stereoloop.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="stereoloop.pp"  "../stereoloop.c"
-'Finished building: ../stereoloop.c'
-' '
-'Building target: stereoloop_squareleft.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"stereoloop_squareleft.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="stereoloop_squareleft_linkInfo.xml" --rom_model -o "stereoloop_squareleft.out"  "./vectors.obj" "./stereoloop.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: stereoloop_squareleft.out'
+'Finished building target: lab2_IIR_DF2_SOS.out'
 ' '
 
 **** Build Finished ****

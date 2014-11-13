@@ -17,11 +17,14 @@
 #include "dsk6713_aic23.h"
 #include "fdacoefs.h"
 
+#define L 11
+
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
 float w[11] = {0};
+int n = 0;
 
 interrupt void serialPortRcvISR(void);
 
@@ -70,27 +73,35 @@ interrupt void serialPortRcvISR()
 	tempF /= 32768;
 
 	int k, i;
-	//calculate intermediate values
-	//w[0] = tempF; //since first coefficient is 1
-
-	//calculate output
-
-	//shift the intermediate value array forward by one sample
-	for(i = 9; i >= 0; i--){
-		w[i+1] = w[i];
+	if(n >= 11)
+	{
+		n = 0;
 	}
+
+
+	//calculate intermediate values
 
 	//iterate to sum the last 18 intermediate values*A_coefficients
-	for(k = 1; k<11; k++){
-		sum += DEN[k]*w[k];
+	for(k = 1; k<L; k++){
+		i = n - k;
+		if(i < 0){
+			i += L;
+		}
+		sum += DEN[k]*w[i];
 	}
 	//subtract sum from the current scaled reading
-	w[0] = tempF - sum;
+	w[n] = tempF - sum;
 
 	//iterate to sum the current and last 18 intermediate values*B_coefficients
-	for(k=0;k<11;k++){
-		out += NUM[k] * w[k];
+	for(k=0;k<L;k++){
+		i = n - k;
+		if(i < 0){
+			i += L;
+		}
+		out += NUM[k] * w[i];
 	}
+
+	n++;
 
 	//rescale and output
 	out *= 32768;

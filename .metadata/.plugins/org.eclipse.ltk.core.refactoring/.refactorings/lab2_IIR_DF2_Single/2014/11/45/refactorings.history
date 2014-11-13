@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lab2/stereoloop.c&apos; to &apos;lab2.c&apos;" description="Rename resource &apos;stereoloop.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stereoloop.c" name="lab2.c" stamp="1415219086343" updateReferences="true"/>
+</session>
