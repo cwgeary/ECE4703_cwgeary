@@ -118,7 +118,7 @@ all: lab2_IIR_DF2_SOS.out
 lab2_IIR_DF2_SOS.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
