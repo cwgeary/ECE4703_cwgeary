@@ -2,6 +2,16 @@
 **** Build of configuration Debug for project lab3_FIR_DF1 ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
+'Building file: ../lab3_FIR.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab3_FIR.pp"  "../lab3_FIR.c"
+'Finished building: ../lab3_FIR.c'
+' '
+'Building target: lab3_FIR_DF1.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab3_FIR_DF1.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab3_FIR_DF1_linkInfo.xml" --rom_model -o "lab3_FIR_DF1.out"  "./vectors.obj" "./lab3_FIR.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab3_FIR_DF1.out'
+' '
 
 **** Build Finished ****

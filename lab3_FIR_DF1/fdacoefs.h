@@ -35,7 +35,7 @@
  *   int8 filter coefficients.
  */
 const int BL = 27;
-const int B[27] = {
+const char B[27] = {
       0,   -5,    0,    4,    0,    3,    0,  -18,    0,   38,    0,  -56,
       0,   63,    0,  -56,    0,   38,    0,  -18,    0,    3,    0,    4,
       0,   -5,    0
