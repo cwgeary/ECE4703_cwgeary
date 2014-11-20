@@ -8173,3 +8173,16 @@ java.nio.channels.ClosedByInterruptException
 	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:144)
 	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:84)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.core.resources 4 1 2014-11-19 22:43:59.874
+!MESSAGE Problems occurred refreshing resources
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2014-11-19 22:43:59.874
+!MESSAGE Problem finding next change, code: 995
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-11-19 23:14:23.948
+!MESSAGE DS_ERROR: TMS320C671X: Power Failure on Target CPU 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-11-19 23:14:23.958
+!MESSAGE DS_ERROR: TMS320C671X: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+

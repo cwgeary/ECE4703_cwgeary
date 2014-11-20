@@ -71,7 +71,7 @@ interrupt void serialPortRcvISR()
 
 	//create temporary variable of left channel for processing
 	int tempF = temp.channel[1];
-	tempF = tempF << (Q_25 - 16);
+//	tempF = tempF << (Q_25);
 
 	int sum = 0;
 

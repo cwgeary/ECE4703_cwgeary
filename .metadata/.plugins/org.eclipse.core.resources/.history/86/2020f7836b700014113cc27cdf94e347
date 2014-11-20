@@ -18,10 +18,9 @@
 #include "fdacoefs.h"
 
 #define L 11
-#define Q_25 28
-#define X_25 2
-#define W_25 (Q_25 - X_25)
-#define OUT_25 (Q_25 - 15)
+#define Q 25
+#define W 13
+#define X (Q - 16)
 
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
@@ -71,7 +70,7 @@ interrupt void serialPortRcvISR()
 
 	//create temporary variable of left channel for processing
 	int tempF = temp.channel[1];
-	tempF = tempF << (Q_25 - 16);
+	tempF = tempF << X;
 
 	int sum = 0;
 
@@ -90,7 +89,8 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		sum += ((DEN[k] >> 1)*(w[i] >> 14));
+		//DEN Q-14?
+		sum += ((DEN[k] )*(w[i] >> 11));
 	}
 	//subtract sum from the current scaled reading
 	w[n] = tempF - sum;
@@ -101,7 +101,8 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		out += ((NUM[k] >> 1) * (w[i] >> 14));
+		//NUM Q-16?
+		out += ((NUM[k] >> 2 ) * (w[i] >> 7));
 	}
 
 	n++;

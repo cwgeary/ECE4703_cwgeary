@@ -90,7 +90,7 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		sum += ((DEN[k] >> 1)*(w[i] >> 14));
+		sum += ((DEN[k] >> 1)*(w[i] >> 11));
 	}
 	//subtract sum from the current scaled reading
 	w[n] = tempF - sum;
@@ -101,7 +101,7 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		out += ((NUM[k] >> 1) * (w[i] >> 14));
+		out += ((NUM[k] >> 1) * (w[i] >> 11));
 	}
 
 	n++;
