@@ -25,6 +25,8 @@ DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configurati
 //Create storage array for signal components
 float w[11] = {0};
 int n = 0;
+float maxIntermediate = 0;
+float maxMin = 0;
 
 interrupt void serialPortRcvISR(void);
 
@@ -91,6 +93,12 @@ interrupt void serialPortRcvISR()
 	}
 	//subtract sum from the current scaled reading
 	w[n] = tempF - sum;
+	if(w[n] > maxIntermediate){
+		maxIntermediate = w[n];
+	}
+	if(w[n] < maxMin){
+		maxMin = w[n];
+	}
 
 	//iterate to sum the current and last 18 intermediate values*B_coefficients
 	for(k=0;k<L;k++){
