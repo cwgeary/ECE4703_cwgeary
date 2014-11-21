@@ -103,13 +103,13 @@ interrupt void serialPortRcvISR()
 		}
 
 		//multiply each Q-15 value and convert to 16-bit number for extended precision accumulator
-		out += (short)((B_shifted[i] * x[j]) >> 15);
+		out += (B_shifted[i] * x[j]) >> 15;
 	}
 
 	n++;
 
 	//cast 32bit number as 16bits after shifting by calculated number of bits
-	temp.channel[0] = (short)(out >> P_BITS);
+	temp.channel[0] = (short)(out);
 
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }

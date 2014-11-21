@@ -18,10 +18,6 @@
 #include "fdacoefs.h"
 
 #define L 11
-#define Q_25 28
-#define X_25 2
-#define W_25 (Q_25 - X_25)
-#define OUT_25 (Q_25 - 15)
 
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
@@ -34,6 +30,11 @@ interrupt void serialPortRcvISR(void);
 
 void main()
 {
+	//initialize intermediary values to zero
+	for(n = 0; n < 11; n++)
+	{
+		w[n] = 0;
+	}
 
 	DSK6713_init();		// Initialize the board support library, must be called first
     hCodec = DSK6713_AIC23_openCodec(0, &config);	// open codec and get handle
@@ -70,12 +71,17 @@ interrupt void serialPortRcvISR()
 	// Note that left channel is in temp.channel[1]
 
 	//create temporary variable of left channel for processing
-	int tempF = temp.channel[1];
-	tempF = tempF << (Q_25 - 16);
+	short tempIn = temp.channel[1];
+	//Shift input signal to a Q-26 number
+	int tempScaled = tempIn << 11;
 
+	//initialize storage variable for calculating intermediate values
+	//sum will be a Q-26 number
 	int sum = 0;
 
+	//loop variables
 	int k, i;
+	//reset cyclical buffer index
 	if(n >= 11)
 	{
 		n = 0;
@@ -90,10 +96,12 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		sum += ((DEN[k] >> 1)*(w[i] >> 14));
+
+		//coefficients are Q-12 and intermediate values are Q-14 resulting in adding Q-26 numbers to sum
+		sum += ((DEN[k])*(w[i]));
 	}
-	//subtract sum from the current scaled reading
-	w[n] = tempF - sum;
+	//subtract sum(Q-26) from the current scaled reading(Q-26) and scale down to Q-14 to store as an intermediate value
+	w[n] = (tempScaled - sum) >> 12;
 
 	//iterate to sum the current and last 18 intermediate values*B_coefficients
 	for(k=0;k<L;k++){
@@ -101,12 +109,14 @@ interrupt void serialPortRcvISR()
 		if(i < 0){
 			i += L;
 		}
-		out += ((NUM[k] >> 1) * (w[i] >> 14));
+		//scale down intermediate values to avoid output overflow
+		out += (NUM[k]*(w[i] >> 10));
 	}
 
 	n++;
 
-	temp.channel[0] = (short)(out >> 10);
+	//scale down the output and cast as a short before writing to the codec
+	temp.channel[0] = (short)(out >> 8);
 
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }

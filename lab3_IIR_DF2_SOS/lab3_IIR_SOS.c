@@ -23,13 +23,13 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-short w[33] = {0};
-short NUM_s[11][3] = {0};
-short DEN_s[11][3] = {0};
+int w[33] = {0};
+int NUM_s[11][3] = {0};
+int DEN_s[11][3] = {0};
 short n = 0;
 
 interrupt void serialPortRcvISR(void);
-short lordBiquad(short x, int row);
+int lordBiquad(int x, int row);
 
 void main()
 {
@@ -38,12 +38,17 @@ void main()
 
     //convert coefficients to Q15 format
     short i,j;
+    for(i = 0; i < 33; i++)
+    {
+    	w[i] = 0;
+    }
+
     for(i = 0; i < 11; i++)
     {
     	for(j = 0; j < 3; j++)
     	{
-    		NUM_s[i][j] = NUM[i][j] << 8;
-    		DEN_s[i][j] = DEN[i][j] << 8;
+    		NUM_s[i][j] = NUM[i][j] << 5;
+    		DEN_s[i][j] = DEN[i][j] << 5;
     	}
     }
 
@@ -80,14 +85,18 @@ interrupt void serialPortRcvISR()
 
 	//create temporary variable of left channel for processing
 	short tempF = temp.channel[1];
+	//scale up input value to Q-26
+	int tempScaled = tempF << 11;
 
 	int i;
 
-	out = tempF;
+	out = tempScaled;
 
+	//reset the cyclical buffer sub-index
 	if(n >= 3){
 		n = 0;
 	}
+
 	//calculate the output of each second order section and pass it to the next
 	for(i = 0; i < 11; i++)
 	{
@@ -95,12 +104,13 @@ interrupt void serialPortRcvISR()
 	}
 	n++;
 
-	temp.channel[0] = out;
+	//downscale the output back to Q-15 and cast as a short before writing to the codec
+	temp.channel[0] = (short)(out >> 11);
 
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }
 
-short lordBiquad(short x, int row)
+int lordBiquad(int x, int row)
 {
 	//reference markers for manipulating the cyclical array
 	int n1,n2,n3;
@@ -125,11 +135,16 @@ short lordBiquad(short x, int row)
 		n3 = 2;
 	}
 
-	//compute the current intermediate value result for this section
-	w[(row*3)+n] = (short)(x - ((DEN[row][1]*w[(row*3)+n1]) >> 15) - ((DEN[row][2]*w[(row*3)+n2]) >> 15));
+	//compute the current Q-15 intermediate value result for this section
+	w[(row*3)+n] =
+		(
+			x										//input value in Q-26
+			- (DEN_s[row][1]*(w[(row*3)+n1]))		//Q-11 coefficient multiplied by a Q-15 intermediary value
+			- (DEN_s[row][2]*(w[(row*3)+n2]))		//Q-11 coefficient multiplied by a Q-15 intermediary value
+		) >> 11;									//shift the Q-26 sum to a Q-15
 
-	//compute the current output of this section of the filter
-	y = ((NUM[row][0]*w[(row*3)+n3]) >> 8) + ((NUM[row][1]*w[(row*3)+n1]) >> 8) + ((NUM[row][2]*w[(row*3)+n2]) >> 8);
+	//compute the current output of this section of the filter as a sum of Q-26 values
+	y = (NUM_s[row][0]*w[(row*3)+n3]) + (NUM_s[row][1]*w[(row*3)+n1]) + (NUM_s[row][2]*w[(row*3)+n2]);
 
 	return y;
 }
