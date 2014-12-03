@@ -1234,3 +1234,113 @@ java.nio.channels.ClosedByInterruptException
 
 !ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-02 21:57:34.885
 !MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\_printfi.c
+!SESSION 2014-12-03 15:08:56.826 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 2 0 2014-12-03 15:09:32.968
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-03 15:09:32.969
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.626
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showFunctionOffsets in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.629
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showFunctionOffsetsTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.632
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showCodeBytes in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.635
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showCodeBytesTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.638
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showAddress in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:26:24.642
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showAddressTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:32.728
+!MESSAGE Unable to locate file: dsk6713.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:43.591
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\_printfi.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:49.591
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x316c | aligned address 0x3170)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:50.334
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\imath64.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:50.484
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x35ac | aligned address 0x35b0)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:51.338
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\memory.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:51.436
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x38dc | aligned address 0x38e0)
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:51.808
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x3c0c | aligned address 0x3c10)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:52.721
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\divf.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:52.779
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x426c | aligned address 0x4270)
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:53.752
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x46ac | aligned address 0x46b4)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:26:54.011
+!MESSAGE Unable to locate file: dsk6713_aic23_opencodec.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:26:57.338
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x4bfc | aligned address 0x4c00)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:27:03.088
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\fputc.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:27:04.659
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\setvbuf.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:27:05.695
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x547c | aligned address 0x5480)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:27:05.955
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\imath40.c
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-03 15:27:07.203
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x569c | aligned address 0x56a0)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:27:34.593
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\_printfi.c
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-03 15:50:14.736
+!MESSAGE NLS unused message: Checking in: com.ti.ccstudio.project.ui.internal.messages
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 15:54:00.660
+!MESSAGE Unable to locate file: dsk6713.c
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-03 16:44:23.476
+!MESSAGE Unable to locate file: c:\users\ndemarinis\appdata\local\temp\ti_mklibmcvtch\src\_printfi.c

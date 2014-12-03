@@ -1,0 +1,33 @@
+; ECE4703 B-term 2014
+	; An example of C-callable assembly functions
+	; original by DRB (2011) edited smj (2014)
+
+	.def 	_iir_single  ; make label _test_asm visible to external progs
+ZZZ	.equ	100		; declare constant (not necessary, just an example)
+	.ref	_DEN	; refer to denminator coefficients as global
+	.ref	_NUM	; refer to numerator coefficients as global
+	                   ; two things get passed in:
+	                   ; A4 = x_asm
+	                   ; B4 = N_asm
+	                   ; This code computes iir single section of order N from x_asm
+	                   ; and returns the result
+
+_iir_single:
+
+	;; load address of denominator coefficients into memory
+	MVKL	.S1		_DEN, A0	; put address of global x_asm into memory
+	MVKH	.S1		_DEN, A0
+	LDW		.D1		*A0, A1		; the contents of x_asm stored in A1
+	NOP		4
+
+	MPYSP	.M1	A1,A4,A5	; A5 = A1*A4 (temp result = a*x)
+	NOP		3		; wait 3 delay slots for result
+	ADDSP	.L1x	A5,B4,A4	; final result = (a*x)+b
+				 	; need to use "cross path" designated
+					; by x to bring B4 to L1
+	NOP		3		; wait 3 delay slots for result
+	B		B3		; branch back to calling function
+					; This function passes result in A4
+	NOP		5		; Clear pipeline
+
+	.end

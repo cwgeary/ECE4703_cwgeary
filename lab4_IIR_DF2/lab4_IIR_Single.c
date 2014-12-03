@@ -23,11 +23,12 @@ DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configurati
 
 //Create storage array for signal components
 float w[11];
+float w_asm[11];
 int n = 0;
-
 
 interrupt void serialPortRcvISR(void);
 short iirDFII(float x_n, short N);
+short iir_single(float x_asm, short N_asm);
 
 void main()
 {
@@ -35,6 +36,7 @@ void main()
 	for(i  = 0; i < 11; i++)
 	{
 		w[i] = 0;
+		w_asm[i] = 0;
 	}
 
 	DSK6713_init();		// Initialize the board support library, must be called first
