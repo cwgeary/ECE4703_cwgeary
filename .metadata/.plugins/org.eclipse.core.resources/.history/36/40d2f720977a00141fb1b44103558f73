@@ -62,7 +62,7 @@ void main()
 	}
 }
 
-short iirDFII(float x_n, short N)
+short iirDFII(short x_n, short N)
 {
 	//check to see if supplied order is greater than actual filter order, don't do shit if it is
 	if(N > NL)

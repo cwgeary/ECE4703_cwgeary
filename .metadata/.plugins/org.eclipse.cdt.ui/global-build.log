@@ -1,174 +1,4 @@
 
-**** Build of configuration Debug for project lab2_IIR_DF2_SOS ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab2_IIR_SOS.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_SOS.pp"  "../lab2_IIR_SOS.c"
-'Finished building: ../lab2_IIR_SOS.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: lab2_IIR_DF2_SOS.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_SOS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_SOS_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_SOS.out"  "./vectors.obj" "./lab2_IIR_SOS.obj" -l"libc.a" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713sl.lib" "../C6713.cmd" 
-<Linking>
-error #10008-D: cannot find file
-   "C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713sl.lib"
-
- undefined                      first referenced  
-
-  symbol                            in file       
->> Compilation failure
- ---------                      ----------------  
- _DSK6713_AIC23_codecdatahandle ./lab2_IIR_SOS.obj
- _DSK6713_AIC23_openCodec       ./lab2_IIR_SOS.obj
- _DSK6713_AIC23_setFreq         ./lab2_IIR_SOS.obj
- _DSK6713_init                  ./lab2_IIR_SOS.obj
-
-error #10234-D: unresolved symbols remain
-error #10010: errors encountered during linking; "lab2_IIR_DF2_SOS.out" not built
-gmake: *** [lab2_IIR_DF2_SOS.out] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab3_FIR_DF1 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab2_FIR_DF1 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab2_FIR.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_FIR.pp"  "../lab2_FIR.c"
-'Finished building: ../lab2_FIR.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: lab2_FIR_DF1.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_FIR_DF1.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_FIR_DF1_linkInfo.xml" --rom_model -o "lab2_FIR_DF1.out"  "./vectors.obj" "./lab2_FIR.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -lC:\ti\lib_3x\csl6713.lib -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\DSK6713\c6000\dsk6713\include" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-error #10008-D: cannot find file "C:\Program Files\Texas
-   Instruments\C6xCSL\lib_3x\csl6713.lib"
-fatal error #6001: cannot open file "C:\ti\DSK6713\c6000\dsk6713\include":
-
-   Permission denied
->> Compilation failure
-gmake: *** [lab2_FIR_DF1.out] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab2_FIR_DF1 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab2_FIR.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_FIR.pp"  "../lab2_FIR.c"
-'Finished building: ../lab2_FIR.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: lab2_FIR_DF1.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_FIR_DF1.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_FIR_DF1_linkInfo.xml" --rom_model -o "lab2_FIR_DF1.out"  "./vectors.obj" "./lab2_FIR.obj" -l"C:\Program Files\Texas Instruments\C6xCSL\lib_3x\csl6713.lib" -lC:\ti\lib_3x\csl6713.lib -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\DSK6713\c6000\dsk6713\include" -l"C:\Program Files\Texas Instruments\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-error #10008-D: cannot find file "C:\Program Files\Texas
-   Instruments\C6xCSL\lib_3x\csl6713.lib"
-fatal error #6001: cannot open file "C:\ti\DSK6713\c6000\dsk6713\include":
-
->> Compilation failure
-   Permission denied
-gmake: *** [lab2_FIR_DF1.out] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab2_FIR_DF1 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building target: lab2_FIR_DF1.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_FIR_DF1.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_FIR_DF1_linkInfo.xml" --rom_model -o "lab2_FIR_DF1.out"  "./vectors.obj" "./lab2_FIR.obj" -lC:\ti\lib_3x\csl6713.lib -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab2_FIR_DF1.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab2_FIR_DF1 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project lab4_IIR_DF2 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k clean 
-DEL /F  "lab4_IIR_DF2.out"
-Could Not Find M:\ECE4703_cwgeary\lab4_IIR_DF2\Debug\lab4_IIR_DF2.out
-DEL /F "lab2_IIR_Single.pp" 
-DEL /F "lab2_IIR_Single.obj" "vectors.obj" 
-DEL /F "vectors.pp" 
-Could Not Find M:\ECE4703_cwgeary\lab4_IIR_DF2\Debug\vectors.pp
-'Finished clean'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab4_IIR_DF2 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab4_IIR_Single.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
-'Finished building: ../lab4_IIR_Single.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: lab4_IIR_DF2.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab4_IIR_DF2.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab4_IIR_DF2 ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab4_IIR_Single.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
-"../lab4_IIR_Single.c", line 92: error #20: identifier "ouput" is undefined
-1 error detected in the compilation of "../lab4_IIR_Single.c".
-
->> Compilation failure
-gmake: *** [lab4_IIR_Single.obj] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
 **** Build of configuration Debug for project lab4_IIR_DF2 ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
@@ -199,6 +29,43 @@ gmake: Nothing to be done for `all'.
 'Building file: ../lab4_IIR_Single.c'
 'Invoking: C6000 Compiler'
 "C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+"../lab4_IIR_Single.c", line 125: warning #994-D: missing return statement at end of non-void function "iirDFII"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+"../lab4_IIR_Single.c", line 127: warning #994-D: missing return statement at end of non-void function "iirDFII"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+"../lab4_IIR_Single.c", line 127: warning #994-D: missing return statement at end of non-void function "iirDFII"
 'Finished building: ../lab4_IIR_Single.c'
 ' '
 'Building target: lab4_IIR_DF2.out'
@@ -261,37 +128,13 @@ gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab2_IIR_DF2_Single ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab2_IIR_DF2_Single ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab2_IIR_Single.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_IIR_Single.pp"  "../lab2_IIR_Single.c"
-'Finished building: ../lab2_IIR_Single.c'
-' '
-'Building target: lab2_IIR_DF2_Single.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab2_IIR_DF2_Single.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab2_IIR_DF2_Single_linkInfo.xml" --rom_model -o "lab2_IIR_DF2_Single.out"  "./vectors.obj" "./lab2_IIR_Single.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab2_IIR_DF2_Single.out'
-' '
-
-**** Build Finished ****
-
 **** Build of configuration Debug for project lab4_IIR_DF2 ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../lab4_IIR_Single.c'
 'Invoking: C6000 Compiler'
 "C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/Program Files/Texas Instruments/C6xCSL/include" --include_path="C:/Program Files/Texas Instruments/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
-"../lab4_IIR_Single.c", line 97: error #20: identifier "sum" is undefined
+"../lab4_IIR_Single.c", line 65: error #148: declaration is incompatible with "short iirDFII(float, short)" (declared at line 30)
 1 error detected in the compilation of "../lab4_IIR_Single.c".
 
 >> Compilation failure

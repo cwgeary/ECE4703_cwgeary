@@ -27,7 +27,7 @@ int n = 0;
 
 
 interrupt void serialPortRcvISR(void);
-short iirDFII(float x_n, short N);
+short iirDFII(short x_n, short N);
 
 void main()
 {
@@ -62,7 +62,7 @@ void main()
 	}
 }
 
-short iirDFII(float x_n, short N)
+short iirDFII(short x_n, short N)
 {
 	//check to see if supplied order is greater than actual filter order, don't do shit if it is
 	if(N > NL)
@@ -73,10 +73,10 @@ short iirDFII(float x_n, short N)
 	else
 	{
 		//create variable for output
-		float output = 0, sum = 0;
+		float output = 0, tempF = 0, sum = 0;
 
 		//scale input to [-1, 1)
-		x_n /= 32786;
+		tempF = x_n / 32768;
 
 		//make sure index current intermediate index never exceeds supplied order
 		int k,i;
@@ -98,7 +98,7 @@ short iirDFII(float x_n, short N)
 		}
 
 		//store intermediate value at current index
-		w[n] = x_n - sum;
+		w[n] = tempF - sum;
 
 		//calculate output from current intermediate buffer index
 		for(k = 0; k < N; k++)
@@ -132,9 +132,7 @@ interrupt void serialPortRcvISR()
 	// Note that right channel is in temp.channel[0]
 	// Note that left channel is in temp.channel[1]
 
-	short out = iirDFII(temp.channel[1], 11);
-
-	temp.channel[0] = out;
+	temp.channel[0] = iirDFII(temp.channel[1], 11);
 
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }
