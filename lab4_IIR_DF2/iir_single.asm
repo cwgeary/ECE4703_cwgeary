@@ -1,6 +1,6 @@
-; ECE4703 B-term 2014
-	; An example of C-callable assembly functions
-	; original by DRB (2011) edited smj (2014)
+;ECE4703 B-term 2014
+; An example of C-callable assembly functions
+; original by DRB (2011) edited smj (2014)
 
 	.def 	_iir_single  ; make label _test_asm visible to external progs
 ZZZ	.equ	100		; declare constant (not necessary, just an example)
@@ -17,50 +17,106 @@ ZZZ	.equ	100		; declare constant (not necessary, just an example)
 
 _iir_single:
 
-	;; load address of denominator coefficients into memory
-	MVKL	.S1		_DEN, A5
-	MVKH	.S1		_DEN, A5
+		;; load address of denominator coefficients into memory
+		MVKL	.S1		_DEN, A5
+		MVKH	.S1		_DEN, A5
 
-	;; load address of numerator coefficients into memory
-	MVKL 	.S1		_NUM, A6
-	MVKH	.S1		_NUM, A6
+		;; load address of numerator coefficients into memory
+		MVKL 	.S1		_NUM, A6
+		MVKH	.S1		_NUM, A6
 
-	;; load address of intermediate coefficients into memory
-	MVKL	.S1		_w_asm, A7
-	MVKH	.S1		_w_asm, A7
+		;; load address of intermediate coefficients into memory
+		MVKL	.S1		_w_asm, A7
+		MVKH	.S1		_w_asm, A7
 
-	;; load address of global counter into memory
-	MVKL	.S1		_n, A8
-	MVKH	.S1		_n, A8
-	LDW		.D1		*A8, A1	; copy value of global counter to register A1
-	NOP		4
+		;; load address of global counter into memory
+		MVKL	.S1		_n, A8
+		MVKH	.S1		_n, A8
+		LDW		.D1		*A8, A12			; copy value of global counter to register A1
+		NOP				4
 
-	;; load address of global order into memory
-	MVKL	.S2		_NL, B5
-	MVKH	.S2		_NL, B5
-	LDW		.D2		*B5, B0
-	NOP		4
+		;; scale input by 32768
+		SHR		.S1		A4, 15, A4
 
-	[A1] ADD	.L1x	A1, B0, A1 ; check if counter is 0, if so, add filter order to reset
-	NOP		3
+		;; load address of global order into memory
+		;MVKL	.S2		_NL, B5
+		;MVKH	.S2		_NL, B5
+		;LDW		.D2		*B5, B0
+		;NOP				4
 
+		CMPGT	.L1		A12,10,A1
+	[!A1]	SUB		.L1		A12, 10, A12 		; check if counter is 0, if so, add filter order to reset
+		NOP		5
+
+		ZERO	.S2		B1				;;Zero the k value register
+		ZERO	.S2		B8				;;Zero the i value register
+		ZERO	.S2		B12				;;zero the sum value register
+		MV		.S2x	A12, B9
+		ADD		.S2		B1,10,B1
 LOOP:
-	ZERO	.L2		B5			;; zero loop counter
-	ADDSP	.S2		B5, 1, B5	;; set loop counter to 1
-	NOP 3
-	SUB		.S2		B5, A1, B6	;; store difference of loop counter to register B6 (i = n - k)
-	NOP 3
+		SUB		.S2		B9, B5, B6		;; store difference of loop counter to register B6 (i = n - k)
+		CMPLTSP	.S2		B6, B8, B2
+	[!B2]	B		.S2		NO_WRAP		;;
+		NOP 	5
+		ADD		.S2		B6, 10, B6		;; wrap i value for circular buffer
+NO_WRAP:
+		MV		.S1x	B1, A9
+		LDW		.D1		*++A5[A9], B7	;;load denominator coefficient value at B1 position
+		NOP				4
+		MV		.S1x	B6, A10
+		LDW		.D1		*++A7[A10], B10;;load intermediate value at B6 position
+		NOP				4
 
-	;; continue in single.c at line 94 for conditional branch and then multiplication and addition
+		MPYSP	.M2		B10,B7,B11		;;multiply the two
+		NOP				3
+		ADD		.S2		B11, B12, B12 	;;ACCUMULATE into sum register
 
-	MPYSP	.M1		A1,A4,A5	; A5 = A1*A4 (temp result = a*x)
-	NOP		3		; wait 3 delay slots for result
-	ADDSP	.L1x	A5,B4,A4	; final result = (a*x)+b
-				 	; need to use "cross path" designated
-					; by x to bring B4 to L1
-	NOP		3		; wait 3 delay slots for result
-	B		B3		; branch back to calling function
-					; This function passes result in A4
-	NOP		5		; Clear pipeline
 
-	.end
+
+
+		SUB		.S2		B1, 1, B1		;; sub one from loop counter
+	[B1]	B		.S2		LOOP
+		NOP		5
+
+		SUB		.S1x	A4, B12, A11
+		STW		.D1		A11, *A7[A12]
+
+		ZERO	.S2		B1				;;Zero the k value register
+		ZERO	.S2		B8				;;Zero the i value register
+		ZERO	.S2		B12				;;zero the sum value register
+		ADD		.S2		B1,10,B1
+LOOP_2:
+		SUB		.S2		B9, B5, B6		;; store difference of loop counter to register B6 (i = n - k)
+		CMPLTSP	.S2		B6, B8, B2
+	[!B2]	B		.S2		NO_WRAP_2		;;
+		NOP		5
+		ADD		.S2		B6, 10, B6		;; wrap i value for circular buffer
+NO_WRAP_2:
+		MV		.S1x	B1, A9
+		LDW		.D1		*++A6[A9], B7	;;load denominator coefficient value at B1 position
+		NOP				4
+		MV		.S1x	B6, A10
+		LDW		.D1		*++A7[A10], B10;;load intermediate value at B6 position
+		NOP				4
+
+		MPYSP	.M2		B10,B7,B11		;;multiply the two
+		NOP				3
+		ADD		.S2		B11, B12, B12 	;;ACCUMULATE into sum register
+
+
+
+
+		SUB		.S2		B1, 1, B1		;; sub one from loop counter
+		CMPLTSP	.S2		B1, B8, B0
+	[!B0]	B		.S2		LOOP_2
+		NOP		5
+		ADD		.S1		A12, 1, A12
+		STW		.D1		A12, *A8
+		NOP		5
+		SHL		.S2		B12, 15, B12	; shift sum output by 15
+		MV		.S1x	B12, A4
+		B		B3						; branch back to calling function
+										; This function passes result in A4
+		NOP		5						; Clear pipeline
+
+		.end
