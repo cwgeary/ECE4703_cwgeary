@@ -17,16 +17,28 @@
 #include "dsk6713_aic23.h"
 #include "fdacoefs.h"
 
+
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
- void serialPortRcvISR(void);
+//Create storage array for signal components
+float w[11];
+float w_asm[11];
+int n = 0;
 
- float x[29] = {0};
- int n = 0;
+void serialPortRcvISR(void);
+short iirDFII(float x_n, short N);
+short iir_single(float x_asm, short N_asm);
 
 void main()
 {
+	short i;
+	for(i  = 0; i < 11; i++)
+	{
+		w[i] = 0;
+		w_asm[i] = 0;
+	}
+
 	// Configure buffered serial ports for 32 bit operation
 	// This allows transfer of both right and left channels in one read/write
 	MCBSP_FSETS(SPCR1, RINTM, FRM);
@@ -40,49 +52,21 @@ void main()
 	}
 }
 
+
 void serialPortRcvISR()
 {
 	union {Uint32 combo; short channel[2];} temp;
 
-		float out = 0;
-		temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
-		// Note that right channel is in temp.channel[0]
-		// Note that left channel is in temp.channel[1]
+	temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
+	// Note that right channel is in temp.channel[0]
+	// Note that left channel is in temp.channel[1]
 
-		//temp.channel[1] = temp.channel[0];
+//	short out = iirDFII(temp.channel[1], 11);
+//	temp.channel[0] = out;
 
-		//create temporary variable of left channel for processing
-		float tempF = temp.channel[1];
+	short out1 = iir_single(temp.channel[1], 10);
+	temp.channel[0] = out1;
 
-		//perform scaling => [-1, 1)
-		tempF /= 32768;
-
-		//wait for buffer to fill up with samples before filtering
-		if(n<45){
-			x[n] = tempF;
-			n++;
-		}
-		else{
-			//buffer is full, now perform filter
-			short i;
-
-			//shift indices to make room for current sample
-			for(i = 43; i >= 0; i--){
-				x[i+1] = x[i];
-			}
-			//store current sample in as "current sample"
-			x[0] = tempF;
-
-			//Calculate filter gain
-			for(i = 0; i < 45; i++){
-				out += B[i] * x[i];
-			}
-		}
-
-		//rescale and output
-		out *= 32768;
-		temp.channel[0] = (short)out;
-
-		MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
+	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
 }
 
