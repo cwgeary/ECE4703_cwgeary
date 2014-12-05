@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_13" class="java.beans.XMLDecoder"> 
+ <object class="com.ti.dvt.profile.LaunchHistorySystem"> 
+  <void property="idHistoryMap"> 
+   <void method="put"> 
+    <string>C6713 Device Cycle Accurate Simulator, Little Endian_0/TMS320C6713</string> 
+    <object class="com.ti.dvt.profile.LaunchHistory"> 
+     <void property="contextId"> 
+      <string>140671</string> 
+     </void> 
+     <void property="orderedItems"> 
+      <object class="java.util.ArrayList"> 
+       <void method="add"> 
+        <string>Configuration 1</string> 
+       </void> 
+      </object> 
+     </void> 
+    </object> 
+   </void> 
+  </void> 
+ </object> 
+</java> 

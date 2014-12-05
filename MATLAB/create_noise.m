@@ -82,38 +82,38 @@ elseif strcmp(type, 'IIR1')
     ylabel('magnitude response (dB)');
     
     %now do some plotting
-    figure(2);
-    [h1, w1] = freqz(b, a, fs);
-    [H1, W1] = freqz(B, A, fs);
-    
-    %plot impulse response
-    subplot(3, 1, 1);
-    impz(b, a, [], fs); grid;
-    title('Direct form II - IIR Impulse Reponse');
-    xlabel('nT (Seconds)');
-    ylabel('Magnitude (dB)');
-    legend('Quantized Coefficients');
+%     figure(2);
+%     [h1, w1] = freqz(b, a, fs);
+%     [H1, W1] = freqz(B, A, fs);
+%     
+%     %plot impulse response
+%     subplot(3, 1, 1);
+%     impz(b, a, [], fs); grid;
+%     title('Direct form II - IIR Impulse Reponse');
+%     xlabel('nT (Seconds)');
+%     ylabel('Magnitude (dB)');
+%     legend('Quantized Coefficients');
     
     %plot magnitude response
-    subplot(3, 1, 2);
-    hold on;
-    plot((w1*(fs/(2*pi)))/1e3, (20*log10(abs(h1)) - 50)); grid;
-    plot((W1*(fs/(2*pi)))/1e3, 20*log10(abs(H1)), 'r');
-    axis([0 8 -140 10]);
-    title('Direct form II - IIR Magnitude Response');
-    xlabel('Frequency (kHz)');
-    ylabel('Magnitude (dB)');
-    legend('Quantized Coefficients', 'Non-Quantized Coefficients');
-    
-    %plot phase response
-    subplot(3, 1, 3);
-    hold on;
-    plot((w1*(fs/(2*pi)))/1e3, unwrap(angle(h1))/2);grid;
-    plot((W1*(fs/(2*pi)))/1e3, unwrap(angle(H1))/2, 'r');
-    title('Direct form II - IIR Phase Response');
-    xlabel('Frequency (kHz)');
-    ylabel('Phase (radians)');
-    legend('Quantized Coefficients', 'Non-Quantized Coefficients');
+%     subplot(3, 1, 2);
+%     hold on;
+%     plot((w1*(fs/(2*pi)))/1e3, (20*log10(abs(h1)) - 50)); grid;
+%     plot((W1*(fs/(2*pi)))/1e3, 20*log10(abs(H1)), 'r');
+%     axis([0 8 -140 10]);
+%     title('Direct form II - IIR Magnitude Response');
+%     xlabel('Frequency (kHz)');
+%     ylabel('Magnitude (dB)');
+%     legend('Quantized Coefficients', 'Non-Quantized Coefficients');
+%     
+%     %plot phase response
+%     subplot(3, 1, 3);
+%     hold on;
+%     plot((w1*(fs/(2*pi)))/1e3, unwrap(angle(h1))/2);grid;
+%     plot((W1*(fs/(2*pi)))/1e3, unwrap(angle(H1))/2, 'r');
+%     title('Direct form II - IIR Phase Response');
+%     xlabel('Frequency (kHz)');
+%     ylabel('Phase (radians)');
+%     legend('Quantized Coefficients', 'Non-Quantized Coefficients');
 
 elseif strcmp(type, 'IIR2')
     % estimate spectrum of unfiltered output

@@ -165,3 +165,463 @@ gmake: Nothing to be done for `all'.
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2_IIR_DF2_Single ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+"../lab4_IIR_Single.c", line 42: warning #225-D: function declared implicitly
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project simulator ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building file: ../lab4_IIR_Single.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab4_IIR_Single.pp"  "../lab4_IIR_Single.c"
+'Finished building: ../lab4_IIR_Single.c'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project simulator ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4_IIR_DF2 ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../iir_single.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="iir_single.pp"  "../iir_single.asm"
+'Finished building: ../iir_single.asm'
+' '
+'Building target: lab4_IIR_DF2.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab4_IIR_DF2.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_IIR_DF2_linkInfo.xml" --rom_model -o "lab4_IIR_DF2.out"  "./vectors.obj" "./lab4_IIR_Single.obj" "./iir_single.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab4_IIR_DF2.out'
+' '
+
+**** Build Finished ****

@@ -137,7 +137,7 @@ interrupt void serialPortRcvISR()
 //	short out = iirDFII(temp.channel[1], 11);
 //	temp.channel[0] = out;
 
-	short out1 = iir_single(temp.channel[1], 10);
+	short out1 = iir_single(temp.channel[1], 11);
 	temp.channel[0] = out1;
 
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
