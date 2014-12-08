@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project lab5_FIR_SxS ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../lab5_FIR_SxS.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_SxS.pp"  "../lab5_FIR_SxS.c"
+'Finished building: ../lab5_FIR_SxS.c'
+' '
+'Building target: lab5_FIR_SxS.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_SxS.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_SxS_linkInfo.xml" --rom_model -o "lab5_FIR_SxS.out"  "./vectors.obj" "./lab5_FIR_SxS.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab5_FIR_SxS.out'
+' '
+
+**** Build Finished ****

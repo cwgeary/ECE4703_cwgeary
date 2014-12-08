@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;simulator/stereoloop.c&apos; to &apos;simulator.c&apos;" description="Rename resource &apos;stereoloop.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stereoloop.c" name="simulator.c" stamp="1418005896836" updateReferences="true"/>
+</session>

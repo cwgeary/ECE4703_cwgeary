@@ -3,6 +3,17 @@
  <object class="com.ti.dvt.profile.LaunchHistorySystem"> 
   <void property="idHistoryMap"> 
    <void method="put"> 
+    <string>Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X</string> 
+    <object class="com.ti.dvt.profile.LaunchHistory"> 
+     <void property="contextId"> 
+      <string>140670</string> 
+     </void> 
+     <void property="orderedItems"> 
+      <object class="java.util.ArrayList"/> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="put"> 
     <string>C6713 Device Cycle Accurate Simulator, Little Endian_0/TMS320C6713</string> 
     <object class="com.ti.dvt.profile.LaunchHistory"> 
      <void property="contextId"> 

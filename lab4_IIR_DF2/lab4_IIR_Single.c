@@ -22,7 +22,7 @@ DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float w[11];
+float w[NL];
 float w_asm[11];
 int n = 0;
 
