@@ -1,596 +1,31 @@
 
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k clean 
-DEL /F  "fuck_this.out"
-Could Not Find M:\ECE4703_cwgeary\fuck_this\Debug\fuck_this.out
-DEL /F "digitrev_index.pp" "lab5_FIR_FxF.pp" 
-DEL /F "bitrev.obj" "cfftr2_dit.obj" "digitrev_index.obj" "lab5_FIR_FxF.obj" "vectors.obj" 
-DEL /F "bitrev.pp" "cfftr2_dit.pp" 
-Could Not Find M:\ECE4703_cwgeary\fuck_this\Debug\bitrev.pp
-DEL /F "vectors.pp" 
-Could Not Find M:\ECE4703_cwgeary\fuck_this\Debug\vectors.pp
-'Finished clean'
-' '
-
-**** Build Finished ****
-
 **** Build of configuration Debug for project fuck_this ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../bitrev.sa'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="bitrev.pp"  "../bitrev.sa"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="bitrev.pp"  "../bitrev.sa"
 'Finished building: ../bitrev.sa'
 ' '
 'Building file: ../cfftr2_dit.sa'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="cfftr2_dit.pp"  "../cfftr2_dit.sa"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="cfftr2_dit.pp"  "../cfftr2_dit.sa"
 'Finished building: ../cfftr2_dit.sa'
 ' '
 'Building file: ../digitrev_index.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="digitrev_index.pp"  "../digitrev_index.c"
-'Finished building: ../digitrev_index.c'
-' '
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 105: warning #179-D: variable "temp" was declared but never referenced
-"../lab5_FIR_FxF.c", line 72: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-!CommandLauncher.error.commandCanceled!
-Error: Program "C:/ti/ccsv5/utils/bin/gmake" is not found in PATH
-
-PATH=[C:/ti/ccsv5/eclipse/jre/bin/client;C:/ti/ccsv5/eclipse/jre/bin;C:/ti/ccsv5/eclipse/jre/lib/i386;C:\Software\Octave-3.6.4\bin;C:\Program Files (x86)\Qucs\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\instantclient_11g\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Microchip\MPLAB C32 Suite\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;c:\applications\iverilog\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\IVI Foundation\IVI\bin;C:\Program Files\IVI Foundation\IVI\bin;C:\Program Files\MATLAB\R2014a\runtime\win64;C:\Program Files\MATLAB\R2014a\bin;C:\Program Files (x86)\Mozilla Firefox;C:\Software\Octave-3.6.4\bin;C:\Program Files (x86)\Qucs\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\instantclient_11g\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Microchip\MPLAB C32 Suite\bin;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;c:\applications\iverilog\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files (x86)\IVI Foundation\IVI\bin;C:\Program Files\IVI Foundation\IVI\bin;C:\Program Files\MATLAB\R2014a\runtime\win64;C:\Program Files\MATLAB\R2014a\bin;C:\ti\ccsv5\eclipse;]
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-"../fuck_this.c", line 113: error #20: identifier "outputPing" is undefined
-"../fuck_this.c", line 121: error #20: identifier "outputPong" is undefined
-2 errors detected in the compilation of "../fuck_this.c".
-
->> Compilation failure
-gmake: *** [fuck_this.obj] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-"../fuck_this.c", line 60: error #17: expected a "]"
-1 error detected in the compilation of "../fuck_this.c".
-
->> Compilation failure
-gmake: *** [fuck_this.obj] Error 1
-gmake: Target `all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../bitrev.sa'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="bitrev.pp"  "../bitrev.sa"
-'Finished building: ../bitrev.sa'
-' '
-'Building file: ../cfftr2_dit.sa'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="cfftr2_dit.pp"  "../cfftr2_dit.sa"
-'Finished building: ../cfftr2_dit.sa'
-' '
-'Building file: ../digitrev_index.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="digitrev_index.pp"  "../digitrev_index.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="digitrev_index.pp"  "../digitrev_index.c"
 'Finished building: ../digitrev_index.c'
 ' '
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building file: ../vectors.asm'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
 'Finished building: ../vectors.asm'
 ' '
 'Building target: fuck_this.out'
@@ -602,111 +37,10 @@ gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../bitrev.sa'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="bitrev.pp"  "../bitrev.sa"
-'Finished building: ../bitrev.sa'
-' '
-'Building file: ../cfftr2_dit.sa'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="cfftr2_dit.pp"  "../cfftr2_dit.sa"
-'Finished building: ../cfftr2_dit.sa'
-' '
-'Building file: ../digitrev_index.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="digitrev_index.pp"  "../digitrev_index.c"
-'Finished building: ../digitrev_index.c'
-' '
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 123: warning #179-D: variable "temp" was declared but never referenced
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
 **** Build of configuration Debug for project fuck_this ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab5_FIR_FxF ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab5_FIR_FxF.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab5_FIR_FxF.pp"  "../lab5_FIR_FxF.c"
-"../lab5_FIR_FxF.c", line 123: warning #179-D: variable "temp" was declared but never referenced
-"../lab5_FIR_FxF.c", line 90: warning #179-D: function "cmplxMult" was declared but never referenced
-'Finished building: ../lab5_FIR_FxF.c'
-' '
-'Building target: lab5_FIR_FxF.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab5_FIR_FxF.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab5_FIR_FxF_linkInfo.xml" --rom_model -o "lab5_FIR_FxF.out"  "./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab5_FIR_FxF.out'
-' '
 
 **** Build Finished ****
 
@@ -722,7 +56,8 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -739,58 +74,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
-'Finished building: ../fuck_this.c'
-' '
-'Building target: fuck_this.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: fuck_this.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project fuck_this ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../fuck_this.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -814,7 +100,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -831,7 +119,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -848,7 +138,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -865,7 +157,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -882,7 +176,9 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -899,7 +195,8 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -916,7 +213,8 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../fuck_this.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
 'Finished building: ../fuck_this.c'
 ' '
 'Building target: fuck_this.out'
@@ -925,5 +223,31 @@ gmake: Nothing to be done for `all'.
 <Linking>
 'Finished building target: fuck_this.out'
 ' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project fuck_this ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../fuck_this.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="fuck_this.pp"  "../fuck_this.c"
+"../fuck_this.c", line 121: warning #179-D: variable "temp" was declared but never referenced
+"../fuck_this.c", line 87: warning #179-D: function "cmplxMult" was declared but never referenced
+'Finished building: ../fuck_this.c'
+' '
+'Building target: fuck_this.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"fuck_this.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="fuck_this_linkInfo.xml" --rom_model -o "fuck_this.out"  "./vectors.obj" "./fuck_this.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: fuck_this.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project fuck_this ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
 
 **** Build Finished ****

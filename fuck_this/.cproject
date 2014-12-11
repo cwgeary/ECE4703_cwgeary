@@ -39,8 +39,6 @@
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.4.compilerID.INCLUDE_PATH.2023451385" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.4.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;C:\ti\DSK6713\c6000\dsk6713\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\ti\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ti\C6xCSL\include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\ti\ccsv5\tools\compiler\c6000_7.4.2\include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
 								<option id="com.ti.ccstudio.buildDefinitions.C6000_7.4.compilerID.ABI.545209510" name="Application binary interface (coffabi, eabi) [See 'General' page to edit] (--abi)" superClass="com.ti.ccstudio.buildDefinitions.C6000_7.4.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.C6000_7.4.compilerID.ABI.coffabi" valueType="enumerated"/>

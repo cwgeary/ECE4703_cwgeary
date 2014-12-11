@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="52" y="22"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.ti.ccstudio.debug.ui.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ti.ccstudio.debug.ui.toolbar" itemType="typeToolBarContribution" x="187" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="52" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="37" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -39,19 +39,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="lab5_FIR_FxF.c" partName="lab5_FIR_FxF.c" path="M:/ECE4703_cwgeary/lab5_FIR_FxF/lab5_FIR_FxF.c" title="lab5_FIR_FxF.c" tooltip="lab5_FIR_FxF/lab5_FIR_FxF.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab5_FIR_FxF/lab5_FIR_FxF.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="815" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="lowpass_50.h" partName="lowpass_50.h" path="M:/ECE4703_cwgeary/lab5_FIR_FxF/lowpass_50.h" title="lowpass_50.h" tooltip="lab5_FIR_FxF/lowpass_50.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab5_FIR_FxF/lowpass_50.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="243" selectionTopPixel="0"/>
+<editor focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="fuck_this.c" partName="fuck_this.c" path="M:/ECE4703_cwgeary/fuck_this/fuck_this.c" title="fuck_this.c" tooltip="fuck_this/fuck_this.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fuck_this/fuck_this.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3062" selectionTopPixel="1215"/>
 </editor>
 </editors>
 <views>
@@ -100,9 +94,8 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="561"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="844"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -114,7 +107,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.ti.ccstudio.TICPerspective">
+<perspectives activePerspective="com.ti.ccstudio.TICPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.ti.ccstudio.internal.ui.perspectives.TICPerspectiveFactory" id="com.ti.ccstudio.TICPerspective" label="CCS Edit"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -407,7 +400,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24884081" ratioLeft="161" ratioRight="486" relationship="4" relative="topLeft"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1628381" ratio="0.8486842" ratioLeft="774" ratioRight="138" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1628381" ratio="0.8190789" ratioLeft="747" ratioRight="165" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -416,7 +409,7 @@
 </folder>
 </info>
 <info folder="true" part="bottomRight" ratio="0.32564104" ratioLeft="254" ratioRight="526" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1628381">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<folder activePageID="com.ti.dvt.ui.views.restorable.table:Profile" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.ti.dvt.ui.views.restorable.table:Profile" label="Profile"/>
 <page content="com.ti.ccstudio.project.ui.views.AdviceView" label="LabelNotFound"/>
@@ -683,55 +676,76 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.RegisterView"/>
-<fastViews>&#x0A;<view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" ratio="0.3"/>
+<fastViews>
+<view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" ratio="0.3"/>
 </fastViews>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="topLeft" ratio="0.25" ratioLeft="478" ratioRight="1434" relationship="2" relative="left">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="topLeft" ratio="0.25" ratioLeft="478" ratioRight="1434" relationship="2" relative="left">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25657895" ratioLeft="234" ratioRight="678" relationship="4" relative="topLeft"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@19b0c2" ratio="0.96143615" ratioLeft="723" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@19b0c2" ratio="0.96143615" ratioLeft="723" ratioRight="29" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.ti.dvt.profile.views.ConfigurationsView" label="Profile Setup"/>
 <page content="com.ti.dvt.ui.views.restorable.table:Profile" label="Profile"/>
 <page content="com.ti.dvt.ui.views.restorable.table:Profile - 2" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomRight" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19b0c2">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.ti.ccstudio.scripting.console.ConsoleView" label="LabelNotFound"/>
+<info folder="true" part="bottomRight" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19b0c2">
+<folder appearance="2" expanded="2">
+<page content="com.ti.ccstudio.scripting.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.6997908" ratioLeft="1338" ratioRight="574" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<info folder="true" part="right" ratio="0.6997908" ratioLeft="1338" ratioRight="574" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.4497908" ratioLeft="860" ratioRight="1052" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="topRight" ratio="0.4497908" ratioLeft="860" ratioRight="1052" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
 </mainWindow>
-<hiddenWindow height="1036" width="960" x="0" y="0">&#x0A;<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<hiddenWindow height="1036" width="960" x="0" y="0">
+<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
 </hiddenWindow>
 </layout>
 </perspective>
@@ -806,164 +820,159 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fuck_this/fuck_this.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab5_FIR_FxF/lab5_FIR_FxF.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab5_FIR_FxF/lowpass_50.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/helloworld/hello.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stereoloop_tutorial/stereoloop.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab5_FIR_SxS/lab5_FIR_SxS.c"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/ti/C6xCSL/include/csl_mcbsp.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab5_FIR_FxF/lowpass_50.h"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/ti/C6xCSL/include/csl_mcbsp.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab5_FIR_FxF/lab5_FIR_FxF.c"/>
 </editors>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="5167" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="5291" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="5256" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="5610" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="4322" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="5621" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="4318" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="4585" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="4249" y="0"/>
+</item>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="3300" y="0"/>
+</item>
+<item historyLabel="fuck_this.c" index="0">
 <position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6229" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="6263" y="0"/>
 </item>
-<item historyLabel="lowpass_50.h" index="1">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="2842" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="6876" y="0"/>
 </item>
-<item historyLabel="hello.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="hello.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7135" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="2842" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="stereoloop.c" index="3">
-<position info="not_deleted" x="1211" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7273" y="0"/>
 </item>
-<item historyLabel="lowpass_50.h" index="1">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7679" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="3878" y="1"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="6855" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_SxS.c" index="4">
-<position info="not_deleted" x="563" y="25"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3575" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="3878" y="1"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7072" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="5770" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3639" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="5874" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7523" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7381" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6368" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7273" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="2283" y="1"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6368" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3062" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6368" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7521" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="1986" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6368" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="4670" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6287" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3643" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6026" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7239" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6109" y="30"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7826" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6107" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7543" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6109" y="30"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7824" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6235" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="7910" y="32"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6324" y="16"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3659" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6368" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="1">
+<position info="not_deleted" x="7103" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="3659" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6680" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="2">
+<position info="not_deleted" x="7103" y="0"/>
 </item>
-<item historyLabel="csl_mcbsp.h" index="5">
-<position info="not_deleted" x="7575" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="4602" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6759" y="0"/>
+<item historyLabel="lab5_FIR_FxF.c" index="2">
+<position info="not_deleted" x="7103" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6660" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="4602" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6305" y="17"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6324" y="16"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6643" y="17"/>
+<item historyLabel="fuck_this.c" index="0">
+<position/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6662" y="16"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="8376" y="32"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="6680" y="13"/>
+<item historyLabel="lab5_FIR_FxF.c" index="2">
+<position info="not_deleted" x="4153" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="7195" y="0"/>
+<item historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="8144" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="2662" y="47"/>
+<item historyLabel="lab5_FIR_FxF.c" index="2">
+<position info="not_deleted" x="4153" y="0"/>
 </item>
-<item historyLabel="lab5_FIR_FxF.c" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="lowpass_50.h" index="6">
-<position info="not_deleted" x="243" y="0"/>
-</item>
-<item active="true" historyLabel="csl_mcbsp.h" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item active="true" historyLabel="fuck_this.c" index="0">
+<position info="not_deleted" x="8144" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -986,11 +995,20 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="csl_mcbsp.h" tooltip="C:\ti\C6xCSL\include\csl_mcbsp.h">
-<persistable uri="file:/C:/ti/C6xCSL/include/csl_mcbsp.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lab5_FIR_FxF.c" tooltip="lab5_FIR_FxF/lab5_FIR_FxF.c">
+<persistable path="/lab5_FIR_FxF/lab5_FIR_FxF.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lab5_FIR_SxS.c" tooltip="lab5_FIR_SxS/lab5_FIR_SxS.c">
 <persistable path="/lab5_FIR_SxS/lab5_FIR_SxS.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fuck_this.c" tooltip="fuck_this/fuck_this.c">
+<persistable path="/fuck_this/fuck_this.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lab5_FIR_FxF.c" tooltip="fuck_this/lab5_FIR_FxF.c">
+<persistable path="/fuck_this/lab5_FIR_FxF.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="csl_mcbsp.h" tooltip="C:\ti\C6xCSL\include\csl_mcbsp.h">
+<persistable uri="file:/C:/ti/C6xCSL/include/csl_mcbsp.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stereoloop.c" tooltip="stereoloop_tutorial/stereoloop.c">
 <persistable path="/stereoloop_tutorial/stereoloop.c"/>
@@ -1010,9 +1028,6 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="bitrev.sa" tooltip="lab5_FIR_FxF/bitrev.sa">
 <persistable path="/lab5_FIR_FxF/bitrev.sa"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lab5_FIR_FxF.c" tooltip="lab5_FIR_FxF/lab5_FIR_FxF.c">
-<persistable path="/lab5_FIR_FxF/lab5_FIR_FxF.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="vectors.asm" tooltip="lab5_FIR_SxS/vectors.asm">
 <persistable path="/lab5_FIR_SxS/vectors.asm"/>
 </file>
@@ -1024,12 +1039,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="lowpass_100.h" tooltip="lab5_FIR_SxS/lowpass_100.h">
 <persistable path="/lab5_FIR_SxS/lowpass_100.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bandpass_400.h" tooltip="simulator/bandpass_400.h">
-<persistable path="/simulator/bandpass_400.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="bandpass_200.h" tooltip="simulator/bandpass_200.h">
-<persistable path="/simulator/bandpass_200.h"/>
 </file>
 </mruList>
 </workbench>
