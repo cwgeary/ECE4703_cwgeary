@@ -10947,3 +10947,131 @@ Execution error.
 !ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 01:27:23.725
 !MESSAGE DS_ERROR: Error initializing emulator
 
+!SESSION 2014-12-11 15:09:06.250 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-11 15:09:59.712
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-11 15:15:55.055
+!MESSAGE Indexed 'attempt_2' (2 sources, 21 headers) in 0.32 sec: 676 declarations; 870 references; 6 unresolved inclusions; 3 syntax errors; 43 unresolved names (2.71%)
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:19:36.765
+!MESSAGE NLS unused message: Checking in: com.ti.ccstudio.project.ui.internal.messages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.434
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showFunctionOffsets in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.438
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showFunctionOffsetsTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.442
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showCodeBytes in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.446
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showCodeBytesTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.449
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showAddress in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY org.eclipse.osgi 2 1 2014-12-11 15:25:43.452
+!MESSAGE NLS missing message: DisassemblyPreferencePage_showAddressTooltip in: org.eclipse.cdt.dsf.debug.internal.ui.disassembly.DisassemblyMessages
+
+!ENTRY com.ti.ccstudio.debug 4 0 2014-12-11 15:25:43.785
+!MESSAGE Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator/TMS320C671X - WARNING: opCode alignment dropped! (Requested address 0x123ec | aligned address 0x123f0)
+
+!ENTRY org.eclipse.cdt.dsf.ui 2 0 2014-12-11 15:25:43.860
+!MESSAGE Unable to locate file: c:\users\awscot~1.ece\appdata\local\temp\ti_mkl~1\src\memcpy62.c
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:34:56.402
+!MESSAGE DS_ERROR: TMS320C671X: Trouble Halting Target CPU: Error 0x80000020/-1060 Fatal Error during: Execution,  An unknown error prevented the emulator from accessing the processor in a timely fashion. It is recommended to RESET EMULATOR.  This will disconnect each  target from the emulator.  The targets should then be power cycled or hard reset followed by an emureset and reconnect to each target.  
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:34:56.416
+!MESSAGE DS_ERROR: Trouble Halting Target CPU:
+Error 0x80000020/-1060
+Fatal Error during: Execution, 
+An unknown error prevented the emulator from accessing the processor
+in a timely fashion.
+It is recommended to RESET EMULATOR.  This will disconnect each 
+target from the emulator.  The targets should then be power cycled
+or hard reset followed by an emureset and reconnect to each target.
+
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:35:00.841
+!MESSAGE DS_ERROR: TMS320C671X: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:45:42.619
+!MESSAGE DS_ERROR: TMS320C671X: Trouble Halting Target CPU: Error 0x80000020/-1060 Fatal Error during: Execution,  An unknown error prevented the emulator from accessing the processor in a timely fashion. It is recommended to RESET EMULATOR.  This will disconnect each  target from the emulator.  The targets should then be power cycled or hard reset followed by an emureset and reconnect to each target.  
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:45:42.630
+!MESSAGE DS_ERROR: Trouble Halting Target CPU:
+Error 0x80000020/-1060
+Fatal Error during: Execution, 
+An unknown error prevented the emulator from accessing the processor
+in a timely fashion.
+It is recommended to RESET EMULATOR.  This will disconnect each 
+target from the emulator.  The targets should then be power cycled
+or hard reset followed by an emureset and reconnect to each target.
+
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:45:53.648
+!MESSAGE DS_ERROR: TMS320C671X: Failed to remove the debug state from the target before disconnecting.  There may still be breakpoint op-codes embedded in program memory.  It is recommended that you reset the emulator before you connect and reload your program before you continue debugging
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:50:37.646
+!MESSAGE DS_ERROR: TMS320C671X: Trouble Halting Target CPU: Error 0x80000020/-1060 Fatal Error during: Execution,  An unknown error prevented the emulator from accessing the processor in a timely fashion. It is recommended to RESET EMULATOR.  This will disconnect each  target from the emulator.  The targets should then be power cycled or hard reset followed by an emureset and reconnect to each target.  
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 15:50:37.656
+!MESSAGE DS_ERROR: Trouble Halting Target CPU:
+Error 0x80000020/-1060
+Fatal Error during: Execution, 
+An unknown error prevented the emulator from accessing the processor
+in a timely fashion.
+It is recommended to RESET EMULATOR.  This will disconnect each 
+target from the emulator.  The targets should then be power cycled
+or hard reset followed by an emureset and reconnect to each target.
+
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 16:00:11.177
+!MESSAGE DS_ERROR: TMS320C671X: Trouble Halting Target CPU: Error 0x80000020/-1060 Fatal Error during: Execution,  An unknown error prevented the emulator from accessing the processor in a timely fashion. It is recommended to RESET EMULATOR.  This will disconnect each  target from the emulator.  The targets should then be power cycled or hard reset followed by an emureset and reconnect to each target.  
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2014-12-11 16:00:11.188
+!MESSAGE DS_ERROR: Trouble Halting Target CPU:
+Error 0x80000020/-1060
+Fatal Error during: Execution, 
+An unknown error prevented the emulator from accessing the processor
+in a timely fashion.
+It is recommended to RESET EMULATOR.  This will disconnect each 
+target from the emulator.  The targets should then be power cycled
+or hard reset followed by an emureset and reconnect to each target.
+
+

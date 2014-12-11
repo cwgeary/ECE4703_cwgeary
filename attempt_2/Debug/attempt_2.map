@@ -1,0 +1,342 @@
+******************************************************************************
+               TMS320C6x Linker PC v7.4.2                      
+******************************************************************************
+>> Linked Thu Dec 11 15:59:54 2014
+
+OUTPUT FILE NAME:   <attempt_2.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00003f60
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  VECS                  00000000   00000200  00000200  00000000  RWIX
+  IRAM                  00000200   0002fe00  00008618  000277e8  RWIX
+  L2RAM                 00030000   00010000  00000000  00010000  RWIX
+  EMIFCE0               80000000   10000000  00000000  10000000  RWIX
+  EMIFCE1               90000000   10000000  00000000  10000000  RWIX
+  EMIFCE2               a0000000   10000000  00000000  10000000  RWIX
+  EMIFCE3               b0000000   10000000  00000000  10000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+vectors    0    00000000    00000200     
+                  00000000    00000200     vectors.obj (vectors)
+
+.pinit     0    00000200    00000000     UNINITIALIZED
+
+.text      0    00000200    00003f80     
+                  00000200    00001140     attempt2.obj (.text)
+                  00001340    00000480     dsk6713bsl.lib : dsk6713.obj (.text)
+                  000017c0    00000360     rts6700.lib : cos.obj (.text:_cos)
+                  00001b20    00000360     attempt2.obj (.text:retain)
+                  00001e80    00000340     rts6700.lib : divf.obj (.text:__divf)
+                  000021c0    00000340                 : sin.obj (.text:_sin)
+                  00002500    00000300     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.text)
+                  00002800    00000280     cfftr2_dit.obj (.text)
+                  00002a80    00000240     rts6700.lib : memcpy62.obj (.text:_memcpy)
+                  00002cc0    00000240     digitrev_index.obj (.text)
+                  00002f00    000001c0     csl6713.lib : csl_irq.obj (.text:_IRQ_map)
+                  000030c0    000001a0                 : csl_mcbsp.obj (.text:_MCBSP_reset)
+                  00003260    000001a0     bitrev.obj (.text)
+                  00003400    00000140     dsk6713bsl.lib : dsk6713_aic23_registers.obj (.text)
+                  00003540    00000120     rts6700.lib : divi.obj (.text:__divi)
+                  00003660    00000100     csl6713.lib : csl_mcbsp.obj (.text:_MCBSP_open)
+                  00003760    00000100                 : csl_mcbsp.obj (.text:_MCBSP_start)
+                  00003860    00000100     rts6700.lib : autoinit.obj (.text:__auto_init)
+                  00003960    000000e0                 : strasg.obj (.text:__strasg)
+                  00003a40    000000e0                 : exit.obj (.text:_exit)
+                  00003b20    000000e0                 : modf.obj (.text:_modf)
+                  00003c00    000000c0                 : round.obj (.text:__nround)
+                  00003cc0    000000c0                 : cpy_tbl.obj (.text:_copy_in)
+                  00003d80    000000c0     dsk6713bsl.lib : dsk6713_aic23_setfreq.obj (.text)
+                  00003e40    000000a0     csl6713.lib : csl_irq.obj (.text:_setMux)
+                  00003ee0    00000080     rts6700.lib : cpp_init.obj (.text:___TI_cpp_init)
+                  00003f60    00000080                 : boot.obj (.text:_c_int00)
+                  00003fe0    00000040     csl6713.lib : csl_irq.obj (.text:_IRQ_enable)
+                  00004020    00000040     rts6700.lib : args_main.obj (.text:__args_main)
+                  00004060    00000040                 : trunc.obj (.text:__trunc)
+                  000040a0    00000020     csl6713.lib : csl_irq.obj (.text:_IRQ_globalDisable)
+                  000040c0    00000020                 : csl_irq.obj (.text:_IRQ_globalEnable)
+                  000040e0    00000020                 : csl_irq.obj (.text:_IRQ_nmiEnable)
+                  00004100    00000020                 : csl_mcbsp.obj (.text:_MCBSP_read)
+                  00004120    00000020                 : csl_mcbsp.obj (.text:_MCBSP_write)
+                  00004140    00000020     rts6700.lib : exit.obj (.text:_abort)
+                  00004160    00000020     csl6713.lib : csl_irq.obj (.text)
+
+.bss       0    00000200    00000000     UNINITIALIZED
+
+.data      0    00000200    00000000     UNINITIALIZED
+
+.far       0    00004180    00003d74     UNINITIALIZED
+                  00004180    00003b68     attempt2.obj (.far)
+                  00007ce8    000000f4     csl6713.lib : csl_irq.obj (.far)
+                  00007ddc    00000002     dsk6713bsl.lib : dsk6713.obj (.far)
+                  00007dde    00000002     --HOLE--
+                  00007de0    00000040     rts6700.lib : cos.obj (.far)
+                  00007e20    00000040                 : sin.obj (.far)
+                  00007e60    00000038     csl6713.lib : csl_mcbsp.obj (.far)
+                  00007e98    00000028     dsk6713bsl.lib : dsk6713_aic23_registers.obj (.far)
+                  00007ec0    00000020                    : dsk6713_aic23_setfreq.obj (.far)
+                  00007ee0    0000000c     rts6700.lib : exit.obj (.far)
+                  00007eec    00000008     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.far)
+
+.stack     0    00007ef8    00000400     UNINITIALIZED
+                  00007ef8    00000008     rts6700.lib : boot.obj (.stack)
+                  00007f00    000003f8     --HOLE--
+
+.cinit     0    000082f8    000003f4     
+                  000082f8    0000014c     attempt2.obj (.cinit)
+                  00008444    00000004     --HOLE-- [fill = 0]
+                  00008448    0000012c     csl6713.lib : csl_irq.obj (.cinit)
+                  00008574    00000004     --HOLE-- [fill = 0]
+                  00008578    00000054                 : csl_mcbsp.obj (.cinit)
+                  000085cc    00000004     --HOLE-- [fill = 0]
+                  000085d0    00000048     rts6700.lib : cos.obj (.cinit)
+                  00008618    00000048                 : sin.obj (.cinit)
+                  00008660    00000030     dsk6713bsl.lib : dsk6713_aic23_registers.obj (.cinit)
+                  00008690    0000002c     rts6700.lib : exit.obj (.cinit)
+                  000086bc    00000004     --HOLE-- [fill = 0]
+                  000086c0    00000028     dsk6713bsl.lib : dsk6713_aic23_setfreq.obj (.cinit)
+                  000086e8    00000004     --HOLE-- [fill = 0]
+
+.const     0    000086ec    00000130     
+                  000086ec    000000cc     attempt2.obj (.const:_B)
+                  000087b8    00000040     dsk6713bsl.lib : dsk6713_aic23_opencodec.obj (.const)
+                  000087f8    00000020                    : dsk6713.obj (.const)
+                  00008818    00000004     attempt2.obj (.const)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000200   $bss
+00000200   .bss
+00000200   .data
+00000200   .text
+00004140   C$$EXIT
+000086ec   _B
+00008818   _BL
+00005848   _DELTA
+00007eec   _DSK6713_AIC23_codeccontrolhandle
+00007ef0   _DSK6713_AIC23_codecdatahandle
+000034c0   _DSK6713_AIC23_config
+00002500   _DSK6713_AIC23_openCodec
+00003498   _DSK6713_AIC23_rget
+00003400   _DSK6713_AIC23_rset
+00003d80   _DSK6713_AIC23_setFreq
+00001754   _DSK6713_getVersion
+0000138c   _DSK6713_init
+000016a8   _DSK6713_rget
+000016bc   _DSK6713_rset
+00007ddc   _DSK6713_version
+000016d0   _DSK6713_wait
+00001728   _DSK6713_waitusec
+00003fe0   _IRQ_enable
+000040a0   _IRQ_globalDisable
+000040c0   _IRQ_globalEnable
+00002f00   _IRQ_map
+000040e0   _IRQ_nmiEnable
+00003660   _MCBSP_open
+00004100   _MCBSP_read
+000030c0   _MCBSP_reset
+00003760   _MCBSP_start
+00004120   _MCBSP_write
+000041b8   _PING
+00004828   _PONG
+000071e0   _V
+00007050   _Z
+00007dd4   __IRQ_dispatchTable
+00007d10   __IRQ_eventTable
+00004160   __IRQ_hookFetchPacket
+00007d94   __IRQ_intTable
+00007e90   __MCBSP_hDev0
+00007e94   __MCBSP_hDev1
+000082f8   __STACK_END
+00000400   __STACK_SIZE
+00000001   __TI_args_main
+00003ee0   ___TI_cpp_init
+00007ee8   ___TI_enable_exit_profile_output
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+00000200   ___bss__
+ffffffff   ___c_args__
+000082f8   ___cinit__
+00000200   ___data__
+00000200   ___edata__
+00000200   ___end__
+00004180   ___etext__
+ffffffff   ___pinit__
+00000200   ___text__
+00004020   __args_main
+00003860   __auto_init
+00003540   __c6xabi_divi
+00007ee0   __cleanup_ptr
+00001e80   __divf
+00003540   __divi
+00007ee4   __dtors_ptr
+00003c00   __nround
+00007ef8   __stack
+00003960   __strasg
+00004060   __trunc
+00004140   _abort
+00003260   _bitrev
+00003f60   _c_int00
+00002800   _cfftr2_dit
+00004184   _config
+00003cc0   _copy_in
+000017c0   _cos
+00002cc0   _digitrev_index
+00003a40   _exit
+00005850   _h
+00004180   _hCodec
+00000c84   _init
+000079e0   _iw
+00007ae0   _ix
+00007ce0   _lflag
+000002cc   _main
+00002a80   _memcpy
+00003b20   _modf
+00007ce4   _n
+00004e98   _outputPING
+000051d0   _outputPONG
+000041ac   _pingFlag
+000041b0   _pingIndex
+00006050   _pingU
+000041ad   _pongFlag
+000041b4   _pongIndex
+00006850   _pongU
+00001b20   _serialPortRcvISR
+000021c0   _sin
+00005510   _w
+00005508   _wat
+ffffffff   binit
+000082f8   cinit
+00000200   edata
+00000200   end
+00004180   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000200   $bss
+00000200   .bss
+00000200   .data
+00000200   .text
+00000200   ___bss__
+00000200   ___data__
+00000200   ___edata__
+00000200   ___end__
+00000200   ___text__
+00000200   edata
+00000200   end
+000002cc   _main
+00000400   __STACK_SIZE
+00000c84   _init
+0000138c   _DSK6713_init
+000016a8   _DSK6713_rget
+000016bc   _DSK6713_rset
+000016d0   _DSK6713_wait
+00001728   _DSK6713_waitusec
+00001754   _DSK6713_getVersion
+000017c0   _cos
+00001b20   _serialPortRcvISR
+00001e80   __divf
+000021c0   _sin
+00002500   _DSK6713_AIC23_openCodec
+00002800   _cfftr2_dit
+00002a80   _memcpy
+00002cc0   _digitrev_index
+00002f00   _IRQ_map
+000030c0   _MCBSP_reset
+00003260   _bitrev
+00003400   _DSK6713_AIC23_rset
+00003498   _DSK6713_AIC23_rget
+000034c0   _DSK6713_AIC23_config
+00003540   __c6xabi_divi
+00003540   __divi
+00003660   _MCBSP_open
+00003760   _MCBSP_start
+00003860   __auto_init
+00003960   __strasg
+00003a40   _exit
+00003b20   _modf
+00003c00   __nround
+00003cc0   _copy_in
+00003d80   _DSK6713_AIC23_setFreq
+00003ee0   ___TI_cpp_init
+00003f60   _c_int00
+00003fe0   _IRQ_enable
+00004020   __args_main
+00004060   __trunc
+000040a0   _IRQ_globalDisable
+000040c0   _IRQ_globalEnable
+000040e0   _IRQ_nmiEnable
+00004100   _MCBSP_read
+00004120   _MCBSP_write
+00004140   C$$EXIT
+00004140   _abort
+00004160   __IRQ_hookFetchPacket
+00004180   ___etext__
+00004180   _hCodec
+00004180   etext
+00004184   _config
+000041ac   _pingFlag
+000041ad   _pongFlag
+000041b0   _pingIndex
+000041b4   _pongIndex
+000041b8   _PING
+00004828   _PONG
+00004e98   _outputPING
+000051d0   _outputPONG
+00005508   _wat
+00005510   _w
+00005848   _DELTA
+00005850   _h
+00006050   _pingU
+00006850   _pongU
+00007050   _Z
+000071e0   _V
+000079e0   _iw
+00007ae0   _ix
+00007ce0   _lflag
+00007ce4   _n
+00007d10   __IRQ_eventTable
+00007d94   __IRQ_intTable
+00007dd4   __IRQ_dispatchTable
+00007ddc   _DSK6713_version
+00007e90   __MCBSP_hDev0
+00007e94   __MCBSP_hDev1
+00007ee0   __cleanup_ptr
+00007ee4   __dtors_ptr
+00007ee8   ___TI_enable_exit_profile_output
+00007eec   _DSK6713_AIC23_codeccontrolhandle
+00007ef0   _DSK6713_AIC23_codecdatahandle
+00007ef8   __stack
+000082f8   __STACK_END
+000082f8   ___cinit__
+000082f8   cinit
+000086ec   _B
+00008818   _BL
+ffffffff   ___TI_pprof_out_hndl
+ffffffff   ___TI_prof_data_size
+ffffffff   ___TI_prof_data_start
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[108 symbols]
