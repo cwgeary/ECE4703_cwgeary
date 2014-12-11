@@ -1,1 +1,1 @@
-"./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
+"./vectors.obj" "./lab5_FIR_FxF.obj" "./digitrev_index.obj" "./cfftr2_dit.obj" "./bitrev.obj" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"C:\ti\lib_3x\csl6713.lib" -l"libc.a" "../C6713.cmd" 
