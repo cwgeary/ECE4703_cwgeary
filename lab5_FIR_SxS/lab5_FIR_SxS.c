@@ -16,8 +16,8 @@
 #include "dsk6713.h"
 #include "dsk6713_aic23.h"
 
-//#include "lowpass_50.h"
-//#define ORDER 51
+#include "lowpass_50.h"
+#define ORDER 51
 
 //#include "lowpass_100.h"
 //#define ORDER 101
@@ -28,8 +28,8 @@
 //#include "bandpass_200.h"
 //#define ORDER 201
 
-#include "bandpass_400.h"
-#define ORDER 401
+//#include "bandpass_400.h"
+//#define ORDER 401
 
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings

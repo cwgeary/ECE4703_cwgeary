@@ -7,20 +7,20 @@ lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdarg.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/c6x.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/vect.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdint.h
-lab5_FIR_FxF.obj: C:/ti/include/csl.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_chip.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_stdinc.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_stdinchal.h
-lab5_FIR_FxF.obj: C:/ti/include/tistdtypes.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_chiphal.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_emifhal.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_chip.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_irq.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_irqhal.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_timer.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_timerhal.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_mcbsp.h
-lab5_FIR_FxF.obj: C:/ti/include/csl_mcbsphal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_chip.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_stdinc.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_stdinchal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/tistdtypes.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_chiphal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_emifhal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_chip.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_irq.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_irqhal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_timer.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_timerhal.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_mcbsp.h
+lab5_FIR_FxF.obj: C:/ti/C6xCSL/include/csl_mcbsphal.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/math.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/float.h
 lab5_FIR_FxF.obj: C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/access.h
@@ -40,20 +40,20 @@ C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdarg.h:
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/c6x.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/vect.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdint.h: 
-C:/ti/include/csl.h: 
-C:/ti/include/csl_chip.h: 
-C:/ti/include/csl_stdinc.h: 
-C:/ti/include/csl_stdinchal.h: 
-C:/ti/include/tistdtypes.h: 
-C:/ti/include/csl_chiphal.h: 
-C:/ti/include/csl_emifhal.h: 
-C:/ti/include/csl_chip.h: 
-C:/ti/include/csl_irq.h: 
-C:/ti/include/csl_irqhal.h: 
-C:/ti/include/csl_timer.h: 
-C:/ti/include/csl_timerhal.h: 
-C:/ti/include/csl_mcbsp.h: 
-C:/ti/include/csl_mcbsphal.h: 
+C:/ti/C6xCSL/include/csl.h: 
+C:/ti/C6xCSL/include/csl_chip.h: 
+C:/ti/C6xCSL/include/csl_stdinc.h: 
+C:/ti/C6xCSL/include/csl_stdinchal.h: 
+C:/ti/C6xCSL/include/tistdtypes.h: 
+C:/ti/C6xCSL/include/csl_chiphal.h: 
+C:/ti/C6xCSL/include/csl_emifhal.h: 
+C:/ti/C6xCSL/include/csl_chip.h: 
+C:/ti/C6xCSL/include/csl_irq.h: 
+C:/ti/C6xCSL/include/csl_irqhal.h: 
+C:/ti/C6xCSL/include/csl_timer.h: 
+C:/ti/C6xCSL/include/csl_timerhal.h: 
+C:/ti/C6xCSL/include/csl_mcbsp.h: 
+C:/ti/C6xCSL/include/csl_mcbsphal.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/math.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/float.h: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/access.h: 
