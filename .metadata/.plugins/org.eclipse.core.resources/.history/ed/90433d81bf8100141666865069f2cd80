@@ -1,0 +1,354 @@
+/*************************************************************************
+ *  Basic stereo loop code for C6713 DSK and AIC23 codec
+ *  D. Richard Brown on 22-Aug-2011
+ *  Based on code from "Real-Time Digital Signal Processing Based on TMS320C6000"
+ *  by N. Kehtarnavaz and N. Kim.
+ *************************************************************************/
+
+#define CHIP_6713 1
+
+#include <stdio.h>
+#include <c6x.h>
+#include <csl.h>
+#include <csl_mcbsp.h>
+#include <csl_irq.h>
+#include <math.h>
+
+#include "dsk6713.h"
+#include "dsk6713_aic23.h"
+
+#include "lowpass_50.h"
+#define ORDER 51
+
+//#include "lowpass_100.h"
+//#define ORDER 101
+
+//#include "lowpass_300.h"
+//#define ORDER 301
+
+//#include "bandpass_200.h"
+//#define ORDER 201
+
+//#include "bandpass_400.h"
+//#define ORDER 401
+
+#define FFT_LENGTH 128
+#define RADIX 2
+#define PI 3.14159265358979
+
+DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
+DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
+
+typedef struct {
+	float re, im;
+} COMPLEX;
+
+volatile char pingFlag = 1, pongFlag = 0;
+volatile unsigned int pingIndex = 0, pongIndex = 0;
+
+//create things associated with the damn twiddles
+float DELTA = 2.0*PI/FFT_LENGTH;
+
+//create arrays containing indices for bit reversal (FFT)
+short iw[FFT_LENGTH/2],ix[FFT_LENGTH]; // indices for bit reversal (these arrays are unnecessarily large)
+volatile unsigned char lflag = 0;
+//create other variables for ease-of-computation
+unsigned int n = 0;
+float in = 0, out = 0;
+
+COMPLEX h[FFT_LENGTH] = {0}; //coefficients will go in here at some point
+#pragma DATA_ALIGN(h,sizeof(COMPLEX))	//align h
+
+long long stahp;
+
+//Create input/output buffers, flags, and indices
+volatile float outputPONG[FFT_LENGTH - (ORDER - 1)] = {0};
+volatile float outputPING[FFT_LENGTH - (ORDER - 1)] = {0};
+
+//create arrays for FFT-related mumbo-jumbo
+
+COMPLEX pingU[FFT_LENGTH] = {0}; //input buffer for fast-convolution
+#pragma DATA_ALIGN(pingU,sizeof(COMPLEX))	//align pingU
+
+long long a;
+
+COMPLEX pongU[FFT_LENGTH] = {0}; //other input buffer for fast-convolution
+#pragma DATA_ALIGN(pongU,sizeof(COMPLEX))	//align pongU
+
+long long b;
+
+COMPLEX V[FFT_LENGTH] = {0}; //will hold the results of the fast convolution
+#pragma DATA_ALIGN(V,sizeof(COMPLEX))	//align V
+
+long long c;
+
+COMPLEX PING[FFT_LENGTH - (ORDER - 1)] = {0};
+#pragma DATA_ALIGN(PING,sizeof(COMPLEX))	//align PING
+
+long long d;
+
+COMPLEX PONG[FFT_LENGTH - (ORDER - 1)] = {0};
+#pragma DATA_ALIGN(PONG,sizeof(COMPLEX))	//align PONG
+
+long long e;
+
+COMPLEX w[(FFT_LENGTH/RADIX)] = {0};
+#pragma DATA_ALIGN(w,sizeof(COMPLEX))	//align w
+
+COMPLEX Z[ORDER - 1] = {0}; //prepending array
+#pragma DATA_ALIGN(Z,sizeof(COMPLEX))	//align Z
+
+//function prototypes
+interrupt void serialPortRcvISR(void);
+void cfftr2_dit(COMPLEX*, COMPLEX*, short);
+void bitrev(COMPLEX*, short*, int);
+void digitrev_index(short*, int, int);
+void init(void);
+
+inline COMPLEX cmplxMult(COMPLEX a, COMPLEX b){
+	COMPLEX ret;
+	ret.re = (a.re * b.re) - (a.im * b.im);
+	ret.im = (a.im * b.re) + (a.re * b.im);
+	return ret;
+}
+
+void main()
+{
+	DSK6713_init();		// Initialize the board support library, must be called first
+    hCodec = DSK6713_AIC23_openCodec(0, &config);	// open codec and get handle
+
+	// Configure buffered serial ports for 32 bit operation
+	// This allows transfer of both right and left channels in one read/write
+	MCBSP_FSETS(SPCR1, RINTM, FRM);
+	MCBSP_FSETS(SPCR1, XINTM, FRM);
+	MCBSP_FSETS(RCR1, RWDLEN1, 32BIT);
+	MCBSP_FSETS(XCR1, XWDLEN1, 32BIT);
+
+	// set codec sampling frequency
+	DSK6713_AIC23_setFreq(hCodec, DSK6713_AIC23_FREQ_8KHZ);
+
+	//initialize buffers to zero
+	init();
+
+
+	// interrupt setup
+	IRQ_globalDisable();			// Globally disables interrupts
+	IRQ_nmiEnable();				// Enables the NMI interrupt
+	IRQ_map(IRQ_EVT_RINT1,15);		// Maps an event to a physical interrupt
+	IRQ_enable(IRQ_EVT_RINT1);		// Enables the event
+	IRQ_globalEnable();				// Globally enables interrupts
+
+
+	while(1)						// main loop - do nothing but wait for interrupts
+	{
+		if(pingFlag == 1 && lflag == 0)
+		{
+			for(n = 0; n < FFT_LENGTH; n++)
+			{
+				if(n < (ORDER - 1))
+				{
+					pingU[n] = Z[n];
+				}
+				else
+				{
+					pingU[n] = PING[n - (ORDER - 1)];
+				}
+			}
+
+			cfftr2_dit(pingU, w, FFT_LENGTH); //calculate FFT of pingU for fast convolution
+			bitrev(pingU, ix, FFT_LENGTH); //and bit reverse the results for use later
+
+			for(n = 0; n < FFT_LENGTH; n++)
+			{
+//				V[n] = cmplxMult(h[n], pingU[n]);
+				V[n].re = (h[n].re * pingU[n].re) - (h[n].im * pingU[n].im);
+				V[n].im = (h[n].im * pingU[n].re) + (h[n].re * pingU[n].im);
+
+//				V[n] = pingU[n];
+
+				//now swap real and imaginary parts for IFFT
+				V[n].im *= -1;
+			}
+
+			//now calculate IFFT of V
+			cfftr2_dit(V, w, FFT_LENGTH);
+			bitrev(V, ix, FFT_LENGTH);
+
+			//grab the most recent output, discarding contents from history array (Z)
+			for(n = (ORDER - 1); n < FFT_LENGTH; n++)
+			{
+				//divide by FFT_LENGTH as per ifft instructions
+				V[n].re /= FFT_LENGTH;
+				outputPING[n] = V[n].re * 32768;
+			}
+
+			//now update history array
+			for(n = ((FFT_LENGTH - (ORDER - 1)) - (ORDER - 1)); n < (FFT_LENGTH - (ORDER - 1)); n++)
+			{
+				Z[n] = PING[n];
+			}
+			lflag = 1;
+
+		}
+		else if(pongFlag == 1 && lflag == 0)
+		{
+			for(n = 0; n < FFT_LENGTH; n++)
+			{
+				if(n < (ORDER - 1))
+				{
+					pongU[n] = Z[n];
+				}
+				else
+				{
+					pongU[n] = PONG[n - (ORDER - 1)];
+				}
+			}
+
+			cfftr2_dit(pongU, w, FFT_LENGTH); //calculate FFT of pingU for fast convolution
+			bitrev(pongU, ix, FFT_LENGTH); //and bit reverse the results for use later
+
+			for(n = 0; n < FFT_LENGTH; n++)
+			{
+				V[n].re = (h[n].re * pongU[n].re) - (h[n].im * pongU[n].im);
+				V[n].im = (h[n].im * pongU[n].re) + (h[n].re * pongU[n].im);
+
+//				V[n] = pongU[n];
+
+				//calculate conjugate
+				V[n].im *= -1;
+			}
+
+			//now calculate IFFT of V
+			cfftr2_dit(V, w, FFT_LENGTH);
+			bitrev(V, ix, FFT_LENGTH);
+
+			//grab the most recent output, discarding contents from history array (Z)
+			for(n = (ORDER - 1); n < FFT_LENGTH; n++)
+			{
+				V[n].re /= FFT_LENGTH;
+				outputPONG[n] = V[n].re * 32768;
+			}
+
+			//now update history array
+			for(n = ((FFT_LENGTH - (ORDER - 1)) - (ORDER - 1)); n < (FFT_LENGTH - (ORDER - 1)); n++)
+			{
+				Z[n] = PONG[n];
+			}
+
+			lflag = 1;
+		}
+	}
+}
+
+interrupt void serialPortRcvISR()
+{
+	union {Uint32 combo; short channel[2];} temp;
+
+	temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
+	// Note that right channel is in temp.channel[0]
+	// Note that left channel is in temp.channel[1]
+	in = temp.channel[1];
+
+	if(pingFlag == 1) //if ping is being processed, and PONG is done processing...
+	{
+		//... FILL DAT SHIT UPP
+		PONG[pongIndex].re = in;
+		PONG[pongIndex].re /= 32768;
+		pongIndex++;
+
+		if(pongIndex >= (FFT_LENGTH - (ORDER - 1)))
+		{
+			pongIndex = 0;
+			pingFlag = 0;
+			pongFlag = 1;
+			lflag = 0;
+		}
+
+		out = (short)outputPONG[pongIndex];
+	}
+	else if(pongFlag == 1) //if pong is being processed, and PING is done processing...
+	{
+		//... FILL DAT SHIT UPPP
+		PING[pingIndex].re = in;
+		PING[pingIndex].re /= 32768;
+		pingIndex++;
+
+		if(pingIndex >= (FFT_LENGTH - (ORDER - 1)))
+		{
+			pingIndex = 0;
+			pingFlag = 1;
+			pongFlag = 0;
+			lflag = 0;
+		}
+
+		out = (short)outputPING[pingIndex];
+	}
+	temp.channel[0] = out;
+
+	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
+}
+
+void init(void)
+{
+	for(n = 0; n < (FFT_LENGTH - (ORDER - 1)); n++)
+	{
+		PING[n].re = 0;
+		PING[n].im = 0;
+		PONG[n].re = 0;
+		PONG[n].im = 0;
+
+		outputPING[n] = 0;
+		outputPONG[n] = 0;
+
+	}
+	for(n = 0; n < (ORDER - 1); n++){
+		Z[n].re = 0;
+		Z[n].im = 0;
+	}
+
+	for(n = 0; n < FFT_LENGTH; n++)
+	{
+		if(n >= ORDER)
+		{
+			h[n].re = 0;
+			h[n].im = 0;
+		}
+		else
+		{
+			h[n].re = B[n];
+			h[n].im = 0;
+		}
+		V[n].re = 0;
+		V[n].im = 0;
+
+		pingU[n].re = 0;
+		pingU[n].im = 0;
+
+		pongU[n].re = 0;
+		pongU[n].im = 0;
+	}
+
+	// compute first N/2 twiddle factors
+	for(n=0;n<FFT_LENGTH/RADIX;n++){
+		w[n].re = cos(DELTA*n);
+		w[n].im = sin(DELTA*n);		// negative imag component
+	}
+
+	for (n=0; n <(FFT_LENGTH/RADIX); n++)
+	{
+	  iw[n] = -1;
+	}
+
+	for (n=0; n<FFT_LENGTH; n++)
+	{
+	  ix[n] = -1;
+	}
+
+
+	digitrev_index(iw, FFT_LENGTH/RADIX, RADIX);
+	bitrev(w, iw, FFT_LENGTH/RADIX);
+
+	cfftr2_dit(h, w, FFT_LENGTH);
+	digitrev_index(ix, FFT_LENGTH, RADIX);
+	bitrev(h, ix, FFT_LENGTH);
+}
