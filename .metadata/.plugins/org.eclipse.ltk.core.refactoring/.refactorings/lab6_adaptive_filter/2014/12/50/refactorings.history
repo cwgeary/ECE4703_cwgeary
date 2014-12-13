@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lab6_adaptive_filter/stereoloop.c&apos; to &apos;adaptive_filter.c&apos;" description="Rename resource &apos;stereoloop.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="stereoloop.c" name="adaptive_filter.c" stamp="1418495735072" updateReferences="true"/>
+</session>
