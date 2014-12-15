@@ -17,7 +17,7 @@
 #include "dsk6713_aic23.h"
 
 #define ORDER 	50		// filter order for test filter in adaptive filter algorithm
-#define MU 		0.2		// step size for adaptive filter algorithm
+#define MU 		1 		// step size for adaptive filter algorithm
 
 float e[ORDER];		// error buffer
 float x[ORDER];		// input buffer
@@ -75,7 +75,7 @@ interrupt void serialPortRcvISR()
 	tempF = temp.channel[0];
 	tempF /= 32768;
 
-	int i,j;
+	int i,j, error;
 	if(n >= (ORDER - 1))
 	{
 		n = 0;
@@ -92,12 +92,13 @@ interrupt void serialPortRcvISR()
 		out += b_adpt[i] * x[j];
 	}
 
+	error = out - x[n];
+
 	//perform adaptive algorithm
 	for(i = 0; i < n; i++)
 	{
-		b_adpt[i] = b_adpt[i] - (MU)*(out - x[n])*x[n - i];
+		b_adpt[i] = b_adpt[i] - ((MU)*(error)*x[n - i]);
 	}
-
 
 	out *= 32768;
 	temp.channel[1] = (short)out;

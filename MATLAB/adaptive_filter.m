@@ -17,7 +17,7 @@ d = filter(B_unk,1,x); % create output of Unknowed System
 
 M = M_unk;   % start with M of correct order
 	     % having M ~= M_unk affects amount of final error
-mu = 0.1;    % adaptive step size
+mu = 0.4;    % adaptive step size
 
 clear b_adpt   
 b_adpt(1,:) = ones(1,M);  % initialize adaptive filter
