@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;lab6_noise_cancellation/adaptive_filter.c&apos; to &apos;noise_cancellation.c&apos;" description="Rename resource &apos;adaptive_filter.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="adaptive_filter.c" name="noise_cancellation.c" stamp="1418701057113" updateReferences="true"/>
+</session>
