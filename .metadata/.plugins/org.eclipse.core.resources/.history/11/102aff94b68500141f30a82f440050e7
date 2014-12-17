@@ -1,0 +1,47 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../C6713.cmd 
+
+ASM_SRCS += \
+../vectors.asm 
+
+C_SRCS += \
+../adaptive_filter.c \
+../lab2_FIR.c 
+
+OBJS += \
+./adaptive_filter.obj \
+./lab2_FIR.obj \
+./vectors.obj 
+
+ASM_DEPS += \
+./vectors.pp 
+
+C_DEPS += \
+./adaptive_filter.pp \
+./lab2_FIR.pp 
+
+C_DEPS__QUOTED += \
+"adaptive_filter.pp" \
+"lab2_FIR.pp" 
+
+OBJS__QUOTED += \
+"adaptive_filter.obj" \
+"lab2_FIR.obj" \
+"vectors.obj" 
+
+ASM_DEPS__QUOTED += \
+"vectors.pp" 
+
+C_SRCS__QUOTED += \
+"../adaptive_filter.c" \
+"../lab2_FIR.c" 
+
+ASM_SRCS__QUOTED += \
+"../vectors.asm" 
+
+

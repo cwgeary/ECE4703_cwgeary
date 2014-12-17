@@ -5,7 +5,7 @@
 %SOS - non-quantized SOS coefficients
 function [] = create_noise(type)%, b, a, B, A, sos, SOS)
 
-fs = 8000; % sampling frequency
+fs = 16000; % sampling frequency
 T = 10; % duration in seconds
 x = 2*rand(fs*T,1)-1; % zero-mean uniformly distributed noise
 x = x*0.95; % reduce the amplitude of x to 95% of full scale

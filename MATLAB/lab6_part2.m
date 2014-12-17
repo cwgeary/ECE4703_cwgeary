@@ -2,32 +2,26 @@
 %while providing the original noise on the right channel for the purposes
 %of filtering
 
-function [] = lab6_part2(wav)
+function [] = lab6_part2(wav, coeff)
 
 clf;
-T = 10;
+T = 20;
 Fs = 44100;
 l = 0:1/Fs:T;
 [s,fs] = audioread(wav, [1,T*Fs]);
 
 %create additive noise
 % w = 2*rand(fs*T,1)-1; % zero-mean uniformly distributed noise
-% w = w*0.95; % reduce the amplitude of w to 95% of full scale
-% b = fir1(50,0.3);
-% w_p = filter(b, 1, w); %create correlated noise signal
-w = sin(2*pi*5000*l);
-w(:, length(s(:,1))) = [];
-w = w * 0.25;
-w = w';
-w_p = w;
-
-
-s(:,1) = s(:,1) + w_p;    % noisy music on left channel
-s(:,2) = w;             % noise on right channel
+% w = w*0.15; % reduce the amplitude of w to 95% of full scale
+% w_p = filter(coeff, 1, w); %create correlated noise signal
+% 
+% s(:,1) = s(:,1) + w_p;      % noisy music on left channel
+% s(:,2) = w_p;                 % noise on right channel
 
 recorder = audiorecorder(fs, 16, 2); % create a recorder object
-sound(s,fs);pause((length(s)/fs)/2);record(recorder, ((length(s)/fs)/2) - 1); % play filtered noise, and record the response from DSK
-pause((length(s)/fs)/2); % pause to let sound play and record
+sound(s,fs);
+record(recorder, T*0.9); % play filtered noise, and record the response from DSK
+pause(T); % pause to let sound play and record
 y = getaudiodata(recorder); % grab audio data
 
 figure(1);

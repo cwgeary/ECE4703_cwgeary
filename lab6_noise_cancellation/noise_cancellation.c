@@ -16,11 +16,11 @@
 #include "dsk6713.h"
 #include "dsk6713_aic23.h"
 
-#define ORDER 	50	// filter order for test filter in adaptive filter algorithm
-#define MU 		0.1 		// step size for adaptive filter algorithm
+#define ORDER 	34		// filter order for test filter in adaptive filter algorithm
+#define MU		0.00001	// mu value for error
 
 float e;			// error global
-float x[ORDER];		// input buffer
+float w[ORDER];		// input buffer
 float b_adpt[ORDER];// adapted filter coefficients
 
 
@@ -67,51 +67,52 @@ interrupt void serialPortRcvISR()
 {
 	union {Uint32 combo; short channel[2];} temp;
 
-	float tempR = 0, yhat = 0, tempL = 0, out = 0;
+	float d_n = 0, y_n = 0, out = 0;
+	int i = 0, j = 0;
 
 	temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
 	// Note that right channel is in temp.channel[0]
 	// Note that left channel is in temp.channel[1]
 
-	tempR = temp.channel[0]; //noise
-	tempL = temp.channel[1]; //noisy music
-	tempR /= 32768;
-	tempL /= 32768;
+	w[n] = (float)temp.channel[0]; 	// noise fed into right channel
+	d_n = (float)temp.channel[1]; 	// music and noise fed into left channel
 
-	int i,j;
+	d_n /= 32768;		// perform scaling to put within range of [-1, 1)
+	w[n] /= 32768;		// perform scaling to put within range of [-1, 1)
+
+	//take care of circular buffer indexing
 	if(n >= (ORDER - 1))
 	{
 		n = 0;
 	}
 
-	x[n] = tempR;
-
-	//Perform FIR Filter
-	for(i = 0; i < (ORDER - 1); i++){
+	//Perform FIR Filter on noise
+	for(i = 0; i < (ORDER); i++){
 		j = n - i;
 		if(j < 0){
-			j += (ORDER - 1);
+			j += (ORDER);
 		}
-		yhat += b_adpt[i] * x[j]; // apply FIR filter to noise samples
+		y_n += b_adpt[i] * w[j]; 	// accumulate output from filter into y_n
 	}
 
-	e = tempL - yhat; //music = noisy music - noise
+	e = (d_n - y_n); 	// find error between unknown system and filter output
 
-	//perform adaptive algorithm
-	for(i = 0; i < (ORDER - 1); i++)
+	//perform adaptive algorithm based on that error
+	for(i = 0; i < (ORDER); i++)
 	{
 		j = n - i;
 		if(j < 0){
-			j += (ORDER - 1);
+			j += (ORDER);
 		}
-		b_adpt[i] = b_adpt[i] - ((MU)*(e)*x[j]);
+		b_adpt[i] = b_adpt[i] + ((MU)*(e)*w[j]);
 	}
 
-	out = e * 32768;
-	yhat *= 32768;
-	temp.channel[0] = (short)out;
-	temp.channel[1] = (short)out; //output music for sanity check
-//	temp.channel[1] = (short)yhat; // for MATLAB
+	out = e;
+	out *= 32768; 	// upscale error for DSK output
+	y_n *= 32768; 	// upscale filter output for DSK output
+
+	temp.channel[0] = (short)out; 	// output error on right channel
+	temp.channel[1] = (short)out;	// adaptive filter output on left channel
 
 	n++;
 
@@ -120,11 +121,12 @@ interrupt void serialPortRcvISR()
 
 void init(void)
 {
+	//initialize all globals and arrays to 0
 	unsigned int i;
-	for(i = 0; i < (ORDER - 1); i++)
+	for(i = 0; i < (ORDER); i++)
 	{
-		e = 0;
-		x[i] = 0;
-		b_adpt[i] = 0;
+		e = 0.0;
+		w[i] = 0.0;
+		b_adpt[i] = 0.0;
 	}
 }

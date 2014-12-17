@@ -16,26 +16,16 @@
 #include "dsk6713.h"
 #include "dsk6713_aic23.h"
 
-#include "lowpass_50.h"
-#define ORDER 51
-
-//#include "lowpass_100.h"
-//#define ORDER 101
-
-//#include "lowpass_300.h"
-//#define ORDER 301
-
-//#include "bandpass_200.h"
-//#define ORDER 201
-
-//#include "bandpass_400.h"
-//#define ORDER 401
+#define ORDER 35
+#define MU 0.0001
 
 //Create storage array for signal components
 float x[ORDER];
-short n = 0;
+float b_adpt[ORDER];
+float e;
+unsigned int n = 0;
 
-interrupt void serialPortRcvISR(void);
+void serialPortRcvISR(void);
 
 void main()
 {
@@ -62,43 +52,68 @@ void serialPortRcvISR()
 {
 	union {Uint32 combo; short channel[2];} temp;
 
-	float out = 0;
+	float d_n = 0, y_n = 0, out = 0, tempD = 0;
+	int i = 0, j = 0;
+
 	temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
 	// Note that right channel is in temp.channel[0]
 	// Note that left channel is in temp.channel[1]
 
-	//temp.channel[1] = temp.channel[0];
+	d_n = (float)temp.channel[0]; 	// output of unknown system goes into d_n
+	x[n] = (float)temp.channel[1]; // regular noise fed into x[n]
 
-	//create temporary variable of left channel for processing
-	float tempF = temp.channel[1];
+	d_n /= 32768;		// perform scaling to put within range of [-1, 1)
+	x[n] /= 32768;		// perform scaling to put within range of [-1, 1)
 
-	//perform scaling => [-1, 1)
-	tempF /= 32768;
-
-	//wait for buffer to fill up with samples before filtering
-	//buffer is full, now perform filter
-	int i,j;
-	if(n >= BL)
+	//take care of circular buffer indexing
+	if(n >= (ORDER - 1))
 	{
 		n = 0;
 	}
 
-	x[n] = tempF;
-
-	//Calculate filter gain
-	for(i = 0; i < ORDER; i++){
+	//Perform FIR Filter on noise
+	for(i = 0; i < (ORDER); i++){
 		j = n - i;
 		if(j < 0){
-			j += ORDER;
+			j += (ORDER);
 		}
-		out += B[i] * x[j];
+		y_n += b_adpt[i] * x[j]; 	// accumulate output from filter into y_n
 	}
+
+	e = (d_n - y_n); 	// find error between unknown system and filter output
+
+	//perform adaptive algorithm based on that error
+	for(i = 0; i < (ORDER); i++)
+	{
+		j = n - i;
+		if(j < 0){
+			j += (ORDER);
+		}
+		tempD = b_adpt[i] - (MU*e*x[j]);
+		b_adpt[i] = tempD;
+	}
+
+	out = e;
+	out *= 32768; 	// upscale error for DSK output
+	y_n *= 32768; 	// upscale filter output for DSK output
+
+	temp.channel[0] = (short)out; 	// output error on right channel
+	temp.channel[1] = (short)y_n;	// adaptive filter output on left channel
+
 	n++;
 
-	//rescale and output
-	out *= 32768;
-	temp.channel[0] = (short)out;
-
 	MCBSP_write(DSK6713_AIC23_DATAHANDLE, temp.combo);
+}
+
+void init(void)
+{
+	//initialize all globals and arrays to 0
+	unsigned int i;
+	for(i = 0; i < (ORDER); i++)
+	{
+		e = 0.0;
+		x[i] = 0.0;
+		b_adpt[i] = 0.0;
+	}
 }
 

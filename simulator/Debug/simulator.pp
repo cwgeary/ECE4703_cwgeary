@@ -23,7 +23,6 @@ simulator.obj: C:/ti/C6xCSL/include/csl_mcbsp.h
 simulator.obj: C:/ti/C6xCSL/include/csl_mcbsphal.h
 simulator.obj: C:/ti/DSK6713/c6000/dsk6713/include/dsk6713.h
 simulator.obj: C:/ti/DSK6713/c6000/dsk6713/include/dsk6713_aic23.h
-simulator.obj: ../lowpass_50.h
 
 ../simulator.c: 
 C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include/stdio.h: 
@@ -48,4 +47,3 @@ C:/ti/C6xCSL/include/csl_mcbsp.h:
 C:/ti/C6xCSL/include/csl_mcbsphal.h: 
 C:/ti/DSK6713/c6000/dsk6713/include/dsk6713.h: 
 C:/ti/DSK6713/c6000/dsk6713/include/dsk6713_aic23.h: 
-../lowpass_50.h: 
