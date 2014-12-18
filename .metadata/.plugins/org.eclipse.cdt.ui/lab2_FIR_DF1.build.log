@@ -2,20 +2,6 @@
 **** Build of configuration Debug for project lab2_FIR_DF1 ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../lab2_FIR.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="lab2_FIR.pp"  "../lab2_FIR.c"
-"../lab2_FIR.c", line 12: fatal error #5: could not open source file "csl.h"
-1 fatal error detected in the compilation of "../lab2_FIR.c".
-Compilation terminated.
-
->> Compilation failure
-gmake: *** [lab2_FIR.obj] Error 1
-'Building file: ../vectors.asm'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
-'Finished building: ../vectors.asm'
-' '
-gmake: Target `all' not remade because of errors.
+gmake: Nothing to be done for `all'.
 
 **** Build Finished ****

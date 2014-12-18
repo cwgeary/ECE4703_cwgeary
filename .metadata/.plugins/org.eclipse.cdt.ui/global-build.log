@@ -1,252 +1,41 @@
 
-**** Build of configuration Debug for project simulator ****
+**** Build of configuration Debug for project lab6_noise_cancellation ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../simulator.c'
+'Building file: ../noise_cancellation.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="simulator.pp"  "../simulator.c"
-'Finished building: ../simulator.c'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O2 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
 ' '
-'Building target: simulator.out'
+'Building target: lab6_noise_cancellation.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"simulator.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="simulator_linkInfo.xml" --rom_model -o "simulator.out"  "./simulator.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O2 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
-'Finished building target: simulator.out'
+'Finished building target: lab6_noise_cancellation.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project simulator ****
+**** Build of configuration Debug for project lab6_noise_cancellation ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project simulator ****
+**** Build of configuration Debug for project lab6_noise_cancellation ****
 
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../simulator.c'
+'Building file: ../noise_cancellation.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="simulator.pp"  "../simulator.c"
-'Finished building: ../simulator.c'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O2 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
 ' '
-'Building target: simulator.out'
+'Building target: lab6_noise_cancellation.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"simulator.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="simulator_linkInfo.xml" --rom_model -o "simulator.out"  "./simulator.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O2 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
-'Finished building target: simulator.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project simulator ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../simulator.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="simulator.pp"  "../simulator.c"
-'Finished building: ../simulator.c'
-' '
-'Building target: simulator.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"simulator.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="simulator_linkInfo.xml" --rom_model -o "simulator.out"  "./simulator.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: simulator.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project simulator ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../simulator.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="simulator.pp"  "../simulator.c"
-'Finished building: ../simulator.c'
-' '
-'Building target: simulator.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"simulator.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="simulator_linkInfo.xml" --rom_model -o "simulator.out"  "./simulator.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: simulator.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project simulator ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-gmake: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project simulator ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../simulator.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="simulator.pp"  "../simulator.c"
-'Finished building: ../simulator.c'
-' '
-'Building target: simulator.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"simulator.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="simulator_linkInfo.xml" --rom_model -o "simulator.out"  "./simulator.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: simulator.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project lab6_adaptive_filter ****
-
-"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../adaptive_filter.c'
-'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
-'Finished building: ../adaptive_filter.c'
-' '
-'Building target: lab6_adaptive_filter.out'
-'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
-<Linking>
-'Finished building target: lab6_adaptive_filter.out'
+'Finished building target: lab6_noise_cancellation.out'
 ' '
 
 **** Build Finished ****
@@ -256,14 +45,957 @@ gmake: Nothing to be done for `all'.
 "C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../noise_cancellation.c'
 'Invoking: C6000 Compiler'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building file: ../vectors.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+'Finished building: ../vectors.asm'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
 'Finished building: ../noise_cancellation.c'
 ' '
 'Building target: lab6_noise_cancellation.out'
 'Invoking: C6000 Linker'
-"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\C6xCSL\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
 <Linking>
 'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building file: ../vectors.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+'Finished building: ../vectors.asm'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building file: ../vectors.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+'Finished building: ../vectors.asm'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building file: ../vectors.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+'Finished building: ../vectors.asm'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building file: ../vectors.asm'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="vectors.pp"  "../vectors.asm"
+'Finished building: ../vectors.asm'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../noise_cancellation.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="noise_cancellation.pp"  "../noise_cancellation.c"
+'Finished building: ../noise_cancellation.c'
+' '
+'Building target: lab6_noise_cancellation.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_noise_cancellation.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_noise_cancellation_linkInfo.xml" --rom_model -o "lab6_noise_cancellation.out"  "./vectors.obj" "./noise_cancellation.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_noise_cancellation.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_noise_cancellation ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+"../adaptive_filter.c", line 82: error #29: expected an expression
+"../adaptive_filter.c", line 91: error #29: expected an expression
+"../adaptive_filter.c", line 94: error #29: expected an expression
+"../adaptive_filter.c", line 103: error #29: expected an expression
+
+"../adaptive_filter.c", line 107: error #29: expected an expression
+>> Compilation failure
+"../adaptive_filter.c", line 130: error #29: expected an expression
+6 errors detected in the compilation of "../adaptive_filter.c".
+gmake: *** [adaptive_filter.obj] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab6_adaptive_filter ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../adaptive_filter.c'
+'Invoking: C6000 Compiler'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --include_path="C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --include_path="C:/ti/DSK6713/c6000/dsk6713/include" --include_path="C:/ti/C6xCSL/include" --include_path="C:/ti/include" --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far --preproc_with_compile --preproc_dependency="adaptive_filter.pp"  "../adaptive_filter.c"
+'Finished building: ../adaptive_filter.c'
+' '
+'Building target: lab6_adaptive_filter.out'
+'Invoking: C6000 Linker'
+"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/bin/cl6x" -mv6713 --abi=coffabi -O1 -g --display_error_number --diag_warning=225 --diag_wrap=off --mem_model:const=far --mem_model:data=far -z --stack_size=0x400 -m"lab6_adaptive_filter.map" --heap_size=0x400 -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/lib" -i"C:/ti/ccsv5/tools/compiler/c6000_7.4.2/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab6_adaptive_filter_linkInfo.xml" --rom_model -o "lab6_adaptive_filter.out"  "./vectors.obj" "./adaptive_filter.obj" -l"C:\ti\lib_3x\csl6713.lib" -l"C:\ti\DSK6713\c6000\dsk6713\lib\dsk6713bsl.lib" -l"libc.a" "../C6713.cmd" 
+<Linking>
+'Finished building target: lab6_adaptive_filter.out'
 ' '
 
 **** Build Finished ****

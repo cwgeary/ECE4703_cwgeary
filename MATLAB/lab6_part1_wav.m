@@ -30,16 +30,20 @@ set(gca, 'Ydir', 'reverse');
 
 % [Py, f] = pwelch(y_nhat, 1024, 512, 1024, fs);
 % plot spectra in dB with grid lines
-z = ones(1, length(f));
 % view(3);
 % plot3(f/1000,z,10*log10(abs(Px)),f/1000,(z+1),10*log10(abs(Py)));
 figure(1);
 plot(f/1000, 10*log10(abs(Px)), f/1000, 10*log10(abs(Py))); grid;
 title('Direct form I – FIR');
 xlabel('frequency (kHz)');
-zlabel('');
 ylabel('magnitude response (dB)');
 legend('unknown system', 'adapated filter');
+
+figure(2);
+plot(y(:,1));
+title('Time-Varying Error');
+xlabel('samples');
+ylabel('magnitude');
 
 % figure(2);
 % 

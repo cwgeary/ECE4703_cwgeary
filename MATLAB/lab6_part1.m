@@ -2,12 +2,12 @@
 %and then creates a white noise signal fitlered using those coefficients
 %then, it outputs the signal over the speaker line, while recording the 
 %response from the microphone line
-function [] = lab6_part1(coeff)
+function [] = lab6_part1(coeff, t)
 
 clf;
 
 fs = 44100; % sampling frequency
-T = 5; % duration in seconds (use higher number for lab testing) 
+T = t; % duration in seconds (use higher number for lab testing) 
 x(1,:) = 2*rand(fs*T,1)-1; % zero-mean uniformly distributed noise
 x = x*0.95; % reduce the amplitude of x to 95% of full scale
 
@@ -18,6 +18,7 @@ y_n(:,2) = filter(coeff, 1, x)'; % filter noise to represent 'unknown' system on
 % -- COMMENTED OUT FOR TESTING -- %
 recorder = audiorecorder(fs, 16, 2); % create a recorder object
 sound(y_n, fs); %play y_n (noise on left channel, filtered noise "unknown system" on right channel)
+pause(T/8);
 record(recorder, T*.9); % record for half the time of output
 pause(T); % pause to let sound finish playing, and recorder finish recording
 y = getaudiodata(recorder); % grab audio data
@@ -50,6 +51,8 @@ legend('unknown system', 'adapated filter');
 
 figure(2);
 plot(y(:,1));
-title('DAT ERRUR THO');
+title('Time-Varying Error');
+xlabel('samples');
+ylabel('Magnitude');
 
 end

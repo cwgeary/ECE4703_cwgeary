@@ -17,11 +17,13 @@
 #include "dsk6713_aic23.h"
 #include "fdacoefs.h"
 
+#define ORDER 27
+
 DSK6713_AIC23_CodecHandle hCodec;							// Codec handle
 DSK6713_AIC23_Config config = DSK6713_AIC23_DEFAULTCONFIG;  // Codec configuration with default settings
 
 //Create storage array for signal components
-float x[29] = {0};
+float x[ORDER] = {0};
 short n = 0;
 
 interrupt void serialPortRcvISR(void);
@@ -42,7 +44,7 @@ void main()
 	// set codec sampling frequency
 	DSK6713_AIC23_setFreq(hCodec, DSK6713_AIC23_FREQ_16KHZ);
 
-	for(n = 0; n < 29; n++)
+	for(n = 0; n < ORDER; n++)
 	{
 		x[n] = 0;
 	}
@@ -80,7 +82,7 @@ interrupt void serialPortRcvISR()
 	//wait for buffer to fill up with samples before filtering
 	//buffer is full, now perform filter
 	int i,j;
-	if(n >= 29)
+	if(n >= ORDER)
 	{
 		n = 0;
 	}
@@ -88,10 +90,10 @@ interrupt void serialPortRcvISR()
 	x[n] = tempF;
 
 	//Calculate filter gain
-	for(i = 0; i < 29; i++){
+	for(i = 0; i < ORDER; i++){
 		j = n - i;
 		if(j < 0){
-			j += 29;
+			j += ORDER;
 		}
 		out += B[i] * x[j];
 	}

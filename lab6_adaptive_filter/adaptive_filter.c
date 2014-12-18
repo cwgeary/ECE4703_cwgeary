@@ -12,12 +12,13 @@
 #include <csl.h>
 #include <csl_mcbsp.h>
 #include <csl_irq.h>
+//#include "fdacoefs.h"
 
 #include "dsk6713.h"
 #include "dsk6713_aic23.h"
 
-#define ORDER 	34		// filter order for test filter in adaptive filter algorithm
-#define MU		0.00001	// mu value for error
+#define ORDER 		75			// filter order for test filter in adaptive filter algorithm
+#define MU		(float)(0.4)	// mu value for error
 
 float e;			// error global
 float x[ORDER];		// input buffer
@@ -36,7 +37,7 @@ void main()
 {
 
 	DSK6713_init();		// Initialize the board support library, must be called first
-    hCodec = DSK6713_AIC23_openCodec(0, &config);	// open codec and get handle
+    hCodec = DSK6713_AIC23_openCodec(0, &config);	// op	en codec and get handle
 
     //initialize buffers
     init();
@@ -67,24 +68,24 @@ interrupt void serialPortRcvISR()
 {
 	union {Uint32 combo; short channel[2];} temp;
 
-	float d_n = 0, y_n = 0, out = 0, tempD = 0;
+	float d_n = 0, y_n = 0, out = 0, tempD = 0, tempR = 0, tempL = 0;
 	int i = 0, j = 0;
 
 	temp.combo = MCBSP_read(DSK6713_AIC23_DATAHANDLE);
 	// Note that right channel is in temp.channel[0]
 	// Note that left channel is in temp.channel[1]
 
-	d_n = (float)temp.channel[0]; 	// output of unknown system goes into d_n
-	x[n] = (float)temp.channel[1]; // regular noise fed into x[n]
-
-	d_n /= 32768;		// perform scaling to put within range of [-1, 1)
-	x[n] /= 32768;		// perform scaling to put within range of [-1, 1)
+	tempR = (float)temp.channel[0]; 	// output of unknown system goes into d_n
+	tempL = (float)temp.channel[1]; 	// regular noise fed into x[n]
 
 	//take care of circular buffer indexing
-	if(n >= (ORDER - 1))
+	if(n >= (ORDER))
 	{
 		n = 0;
 	}
+
+	x[n] = tempL / 32768;		// perform scaling to put within range of [-1, 1)
+	d_n = tempR / 32768;		// perform scaling to put within range of [-1, 1)
 
 	//Perform FIR Filter on noise
 	for(i = 0; i < (ORDER); i++){
@@ -95,6 +96,7 @@ interrupt void serialPortRcvISR()
 		y_n += b_adpt[i] * x[j]; 	// accumulate output from filter into y_n
 	}
 
+
 	e = (d_n - y_n); 	// find error between unknown system and filter output
 
 	//perform adaptive algorithm based on that error
@@ -104,16 +106,17 @@ interrupt void serialPortRcvISR()
 		if(j < 0){
 			j += (ORDER);
 		}
-		tempD = b_adpt[i] - (MU*e*x[j]);
+		tempD = b_adpt[i] + (MU*e*x[j]);
 		b_adpt[i] = tempD;
 	}
+
 
 	out = e;
 	out *= 32768; 	// upscale error for DSK output
 	y_n *= 32768; 	// upscale filter output for DSK output
 
-	temp.channel[0] = (short)out; 	// output error on right channel
-	temp.channel[1] = (short)y_n;	// adaptive filter output on left channel
+	temp.channel[0] = (short)y_n; 	// output error on right channel
+	temp.channel[1] = (short)out;	// adaptive filter output on left channel
 
 	n++;
 
